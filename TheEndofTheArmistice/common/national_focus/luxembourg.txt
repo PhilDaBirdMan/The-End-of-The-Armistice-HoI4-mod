@@ -1,0 +1,184 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+### search_filters = {FOCUS_FILTER_ARMY_XP}
+### search_filters = {FOCUS_FILTER_NAVY_XP}
+### search_filters = {FOCUS_FILTER_AIR_XP}
+### search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
+### search_filters = {FOCUS_FILTER_POLITICAL_CHARACTER}
+### search_filters = {FOCUS_FILTER_MILITARY_CHARACTER}
+### search_filters = {FOCUS_FILTER_INTERNATIONAL_TRADE}
+### search_filters = {FOCUS_FILTER_HISTORICAL}
+### search_filters = {FOCUS_FILTER_SWI_MILITARY_READINESS}
+
+focus_tree = {
+    id = LUX_focus_tree
+    country = {
+        base = 0
+        modifier = {
+            add = 25
+            tag = LUX
+        }
+    }
+    continuous_focus_position = { x = 450 y = 1500 }
+    initial_show_position = { focus = LUX_Raise_the_Armed_Forces }
+ 
+    focus = {
+        id = LUX_Moselle_Industry
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 2
+        y = 0
+        cost = 10
+        completion_reward = {
+            add_war_support = 0.025
+        }
+
+    }
+
+    focus = {
+        id = LUX_Election_of_1937
+        icon = GFX_focus_generic_election
+        x = 0
+        y = 0
+        cost = 5
+        available = {
+            has_stability > 0.45
+            date > 1937.01.01
+            # Elections were June 6, 1937. This is "election prep"
+        }
+        completion_reward = {
+            add_ideas = Elections_of_1937
+            country_event = {id = LUXelection.1}
+        }
+
+    }
+
+    focus = {
+        id = LUX_KPL_Win
+        icon = GFX_goal_support_communism
+        cost = 1
+        prerequisite = {focus = LUX_Election_of_1937 }
+        mutually_exclusive = { focus = LUX_Volksdeutsche_Bewegung focus = LUX_Rietspartei }
+        relative_position_id = LUX_Election_of_1937
+        x = -4
+        y = 1
+        completion_reward = {
+            set_politics = {
+    ruling_party = communism
+    elections_allowed = no
+}
+            add_popularity = {
+    ideology = communism
+    popularity = 0.15
+}
+        }
+    }
+
+    focus = {
+        id = LUX_Volksdeutsche_Bewegung
+        icon = GFX_goal_support_fascism
+        cost = 1
+        prerequisite = {focus = LUX_Election_of_1937 }
+        mutually_exclusive = { focus = LUX_KPL_Win focus = LUX_Rietspartei }
+        relative_position_id = LUX_Election_of_1937
+        x = 4
+        y = 1
+        completion_reward = {
+            set_politics = {
+    ruling_party = fascism
+    elections_allowed = no
+}
+            add_popularity = {
+    ideology = fascism
+    popularity = 0.15
+}
+        }
+    }
+
+    focus = {
+        id = LUX_Rietspartei
+        icon = GFX_goal_support_democracy
+        cost = 1
+        prerequisite = {focus = LUX_Election_of_1937 }
+        mutually_exclusive = { focus = LUX_Volksdeutsche_Bewegung focus = LUX_KPL_Win }
+        relative_position_id = LUX_Election_of_1937
+        x = 0
+        y = 1
+        completion_reward = {
+            add_popularity = {
+    ideology = democratic
+    popularity = 0.15
+}
+        set_politics = {
+    ruling_party = democratic
+    elections_allowed = yes
+    election_frequency = 48
+}
+        }
+    }
+
+     focus = {
+        id = LUX_Secure_New_State
+        icon = GFX_focus_generic_national_security
+        cost = 1
+        prerequisite = {focus = LUX_Rietspartei focus = LUX_KPL_Win focus = LUX_Volksdeutsche_Bewegung }
+        relative_position_id = LUX_Election_of_1937
+        x = 0
+        y = 2
+        completion_reward = { }
+    }
+
+    focus = {
+        id = LUX_welfare
+        icon = GFX_focus_SWE_hygienic_housing
+        cost = 10
+        prerequisite = {focus = LUX_Rietspartei focus = LUX_KPL_Win}
+        prerequisite = {focus = LUX_Secure_New_State}
+        relative_position_id = LUX_Election_of_1937
+        x = -1
+        y = 3
+        completion_reward = {
+
+        }
+    }
+
+# Military Branch
+    focus = {
+        id = LUX_Raise_the_Armed_Forces
+        icon = GFX_goal_generic_army_doctrines
+        cost = 10
+        x = 10
+        y = 2
+        search_filters = {
+            FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_SWI_MILITARY_READINESS
+        }
+        completion_reward = {
+            add_war_support = 0.05
+            army_experience = 15
+            add_manpower = 425
+            
+    }
+    
+}
+
+   focus = {
+    id = LUX_Arms_Trade
+    icon = GFX_goal_generic_military_deal
+    cost = 15
+    prerequisite = { focus = LUX_Raise_the_Armed_Forces }
+    relative_position_id = LUX_Raise_the_Armed_Forces
+    x = 0
+    y = 1
+    completion_reward = {
+        
+    }
+   }
+
+   joint_focus = BNL_Benelux_econ
+}
+

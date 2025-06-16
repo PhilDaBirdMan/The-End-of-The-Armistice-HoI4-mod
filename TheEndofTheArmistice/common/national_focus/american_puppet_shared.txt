@@ -1,0 +1,17 @@
+shared_focus = {
+	id = AMPP_respect_overlord
+	icon =
+	cost = 10
+	available = {
+		ROOT = {
+			is_subject_of = USA
+		}
+	}
+	completion_reward = {
+		add_political_power = 50
+		add_autonomy_score = {
+			value = 15
+			localization = americanpuppetautonomy
+		}
+	}
+}

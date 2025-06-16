@@ -1,0 +1,21 @@
+ideas = {
+    country = {
+        Elections_of_1937 = {
+            picture = neutrality_idea
+			modifier = {
+    political_power_cost = 0.5
+    stability_factor = -0.05
+            }
+            rule = {
+                can_not_declare_war = yes
+                can_join_factions = no
+                can_send_volunteers = no
+            }
+            cancel = {
+    has_completed_focus = LUX_Secure_New_State
+}
+
+        }
+
+    }
+}

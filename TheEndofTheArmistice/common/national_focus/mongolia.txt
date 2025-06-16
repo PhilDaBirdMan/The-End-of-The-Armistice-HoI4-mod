@@ -1,0 +1,219 @@
+focus_tree = {
+    id = MON_focus_tree
+    country = {
+        base = 0
+        modifier = {
+            add = 25
+            tag = MON
+        }
+    }
+
+    focus = {
+        id = MON_strengthen_the_state
+        icon = GFX_goal_generic_political_reform
+        x = 10
+        y = 0
+        cost = 5
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 50
+        }
+        ai_will_do = { factor = 1 }
+        available = {
+            has_government = communism
+        }
+        continue_if_invalid = yes
+        bypass = {
+            has_war = yes
+        }
+    }
+
+    focus = {
+        id = MON_fate_of_the_revolution
+        icon = GFX_goal_generic_soviet_politics
+        prerequisite = { focus = MON_strengthen_the_state }
+        x = 10
+        y = 1
+        cost = 10
+        ai_will_do = { factor = 1 }
+
+        completion_reward = {
+            add_political_power = 75
+            add_named_threat = { threat = 2 name = "Mongolia charts its own path" }
+        }
+    }
+
+### ——— POLITICAL PATHS ———
+
+# Remain a Soviet Puppet
+    focus = {
+        id = MON_loyal_to_moscow
+        icon = GFX_goal_generic_soviet_alliance
+        prerequisite = { focus = MON_fate_of_the_revolution }
+        x = 8
+        y = 2
+        cost = 8
+        ai_will_do = { factor = 1 }
+
+        completion_reward = {
+            add_stability = 0.05
+            set_autonomy = {
+                target = SOV
+                autonomy_state = puppet
+            }
+            add_political_power = 50
+        }
+    }
+
+# Break Free – Independent Mongolia
+    focus = {
+        id = MON_path_of_independence
+        icon = GFX_goal_generic_independence
+        prerequisite = { focus = MON_fate_of_the_revolution }
+        x = 12
+        y = 2
+        cost = 10
+        ai_will_do = { factor = 1 }
+
+        completion_reward = {
+            add_war_support = 0.1
+            add_stability = -0.05
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = MON_found_national_party
+        icon = GFX_goal_generic_political_movement
+        prerequisite = { focus = MON_path_of_independence }
+        x = 12
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+
+        completion_reward = {
+            add_ideas = MON_national_party
+            add_stability = 0.05
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = MON_new_khaganate
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = MON_found_national_party }
+        x = 12
+        y = 4
+        cost = 12
+        ai_will_do = { factor = 1 }
+
+        completion_reward = {
+            add_political_power = 100
+            set_rule = { can_create_factions = yes }
+            create_faction = "Neo-Khaganate Pact"
+        }
+    }
+
+### ——— MILITARY BRANCH ———
+
+    focus = {
+        id = MON_modernize_army
+        icon = GFX_goal_generic_army_doctrine
+        prerequisite = { focus = MON_strengthen_the_state }
+        x = 6
+        y = 1
+        cost = 8
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = land_doctrine_bonus
+                bonus = 1.0
+                uses = 1
+                category = land_doctrine
+            }
+        }
+    }
+
+    focus = {
+        id = MON_expand_cavalry_corps
+        icon = GFX_goal_generic_army_motorized
+        prerequisite = { focus = MON_modernize_army }
+        x = 6
+        y = 2
+        cost = 8
+
+        completion_reward = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 500
+            }
+            add_manpower = 10000
+        }
+    }
+
+### ——— INDUSTRIAL PATH ———
+
+    focus = {
+        id = MON_industrial_awakening
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = MON_strengthen_the_state }
+        x = 14
+        y = 1
+        cost = 8
+
+        completion_reward = {
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = MON_develop_infrastructure
+        icon = GFX_goal_generic_construct_infrastructure
+        prerequisite = { focus = MON_industrial_awakening }
+        x = 14
+        y = 2
+        cost = 8
+
+        completion_reward = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
+
+### ——— EXPANSION PATH ———
+
+    focus = {
+        id = MON_claim_tuva
+        icon = GFX_goal_generic_territory_or_war
+        prerequisite = { focus = MON_path_of_independence }
+        x = 16
+        y = 3
+        cost = 10
+
+        completion_reward = {
+            add_state_claim = 219  # Tuva's state ID
+            add_named_threat = { threat = 5 name = "Mongolia claims Tuva" }
+        }
+    }
+
+    focus = {
+        id = MON_eye_on_china
+        icon = GFX_goal_generic_major_war
+        prerequisite = { focus = MON_new_khaganate }
+        x = 16
+        y = 4
+        cost = 10
+
+        completion_reward = {
+            add_named_threat = { threat = 10 name = "Mongolia eyes Chinese territories" }
+            add_state_claim = 608  # Inner Mongolia
+        }
+    }
+}

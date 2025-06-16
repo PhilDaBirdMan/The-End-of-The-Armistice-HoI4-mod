@@ -1,0 +1,400 @@
+
+focus_tree = {
+    id = PAN_focus_tree
+    country = {
+        base = 0
+        modifier = {
+            add = 25
+            tag = PAN
+        }
+    }
+
+	#Burgertruckfreedom Branch
+	shared_focus = AMPP_respect_overlord
+
+    # Political Branch
+    focus = {
+        id = PAN_secure_sovereignty_canal
+        icon = GFX_focus_generic_government_in_exile
+        x = 2
+        y = 0
+        cost = 10
+        completion_reward = {
+            add_political_power = 150
+            # Flavor text idea: Panama demands greater autonomy over the Canal Zone from the USA.
+        }
+    }
+        
+    focus = {
+        id = PAN_strengthen_national_identity
+        icon = GFX_goal_generic_demand_territory
+		relative_position_id = PAN_secure_sovereignty_canal
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = PAN_secure_sovereignty_canal }
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = PAN_negotiate_canal_treaty
+        icon = GFX_focus_generic_treaty
+		relative_position_id = PAN_strengthen_national_identity
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = PAN_strengthen_national_identity }
+		completion_reward = {
+			add_political_power = 100
+			transfer_state = 685
+			USA = {puppet = PAN}
+		}
+	}
+
+	focus = {
+		id = PAN_expand_democracy
+		icon = GFX_goal_generic_political_reform
+		relative_position_id = PAN_negotiate_canal_treaty
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = { focus = PAN_negotiate_canal_treaty }
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+			}
+		}
+	}
+
+	focus = {
+		id = PAN_authoritarian_consolidation
+		icon = GFX_goal_generic_political_power
+		relative_position_id = PAN_negotiate_canal_treaty
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = PAN_negotiate_canal_treaty }
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+		}
+	}
+
+	focus = {
+		id = PAN_military_coup
+		icon = GFX_goal_generic_military_build_up
+		relative_position_id = PAN_authoritarian_consolidation
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = PAN_authoritarian_consolidation }
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+			}
+		}
+	}
+
+	# Military Branch
+	focus = {
+		id = PAN_modernize_armed_forces
+		icon = GFX_goal_generic_military_build_up
+		x = 4
+		y = 0
+		cost = 10
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = PAN_fortify_canal_zone
+		icon = GFX_goal_generic_coastal_fort
+		relative_position_id = PAN_modernize_armed_forces
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = PAN_modernize_armed_forces }
+		completion_reward = {
+			add_building_coastal_bunker = 3
+		}
+	}
+
+	focus = {
+		id = PAN_develop_army_doctrine
+		icon = GFX_goal_generic_army_offense
+		relative_position_id = PAN_fortify_canal_zone
+		x = 0
+		y = 2
+		cost = 10
+		prerequisite = { focus = PAN_fortify_canal_zone }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = "Canal Defense Program"
+				cost_reduction = 0.3
+				uses = 2
+				category = cat_superior_firepower
+
+			}
+
+		}
+
+	}
+
+	focus = {
+		id = PAN_create_panama_national_guard
+		icon = GFX_goal_generic_military_sphere
+		relative_position_id = PAN_develop_army_doctrine
+		x = 0
+		y = 3
+		cost = 10
+		prerequisite = { focus = PAN_develop_army_doctrine }
+		completion_reward = {
+			division_template = {
+				name = "Panama National Guard Division"
+				is_locked = yes
+				force_allow_recruiting = yes
+				division_cap = 8
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					bicycle_battalion = { x = 1 y = 0 }
+					bicycle_battalion = { x = 1 y = 1 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					rangers_support = { x = 0 y = 1 }
+				}
+			}
+	
+			random_owned_controlled_state = {
+				prioritize = { 685 }
+				limit = { PREV = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"Panama National Guard Division\" division_template = \"Panama National Guard Division\" start_experience_factor = 0.9" 
+					owner = PREV
+				}
+				create_unit = {
+				division = "name = \"Panama National Guard Division\" division_template = \"Panama National Guard Division\" start_experience_factor = 0.9" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Panama National Guard Division\" division_template = \"Panama National Guard Division\" start_experience_factor = 0.9" 
+					owner = PREV
+				}
+			}
+		}
+	}
+	
+		
+
+	# Infrastructure & Economy Branch
+	focus = {
+		id = PAN_expand_canal_facilities
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 6
+		y = 0
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		available = {
+			owns_state = 685
+			controls_state = 685
+			owns_state = 304
+			controls_state = 304
+		}
+		completion_reward = {
+			304 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			685 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PAN_invest_in_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = PAN_expand_canal_facilities
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = PAN_expand_canal_facilities }
+		available = {
+			owns_state = 304
+			controls_state = 304
+		}
+		completion_reward = {
+			304 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PAN_develop_local_industry
+		icon = GFX_goal_generic_industry
+		relative_position_id = PAN_invest_in_infrastructure
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = PAN_invest_in_infrastructure }
+		completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PAN_trade_agreements_neighbors
+		icon = GFX_goal_generic_diplomacy
+		relative_position_id = PAN_develop_local_industry
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = PAN_develop_local_industry }
+		completion_reward = {
+			create_import = {
+				resource = steel
+				amount = 8
+				exporter = COL
+			}
+			create_import = {
+				resource = oil
+				amount = 6
+				exporter = COL
+			}
+			create_import = {
+				resource = steel
+				amount = 6
+				exporter = CRI
+			}
+		}
+	}
+
+	# Diplomacy Branch
+    focus = {
+        id = PAN_align_USA
+        icon = GFX_goal_generic_alliance
+		x = 15
+		y = 0
+		cost = 10
+		bypass = {
+			USA = {
+				is_in_faction_with = ROOT 
+				has_subject = PAN
+			}
+		}
+		completion_reward = {
+			add_opinion = {
+				who = USA
+				value = 50
+			}
+			diplomatic_relation = {
+				country = USA
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = {
+				country = USA
+				relation = non_aggression_pact
+				active = yes
+			}
+			add_political_power = 50
+		}
+		bypass_effect = {
+			diplomatic_relation = {
+				country = USA
+				relation = guarantee
+				active = yes
+			}
+			add_stability = 0.075
+		}
+	}
+
+
+	focus = {
+		id = PAN_seek_latin_american_solidarity
+		icon = GFX_goal_generic_alliance
+		relative_position_id = PAN_align_USA
+		x = -2
+		y = 1
+		cost = 10
+		prerequisite = { focus = PAN_align_USA }
+		completion_reward = {
+			create_faction = "Latin American Solidarity"
+			create_wargoal_against = { target = IMP_USA }
+		}
+	}
+
+
+focus = {
+id = PAN_neutrality_non_alignment
+icon = GFX_goal_generic_neutrality_focus
+relative_position_id = PAN_align_USA
+x = 0
+y = 1
+cost = 10
+prerequisite = { focus = PAN_align_with_usa }
+completion_reward = {
+add_stability = 0.05
+set_neutrality = yes
+}
+}
+
+focus = {
+id = PAN_join_allies
+icon = GFX_goal_generic_allies
+x = 2
+y = 1
+cost = 10
+prerequisite = { focus = PAN_align_USA }
+completion_reward = {
+ENG = { add_to_faction = PAN }
+}
+}
+focus = {
+id = PAN_pursue_axis_cooperation
+icon = GFX_goal_generic_axis
+x = 4
+y = 1
+cost = 10
+prerequisite = { focus = PAN_align_USA }
+completion_reward = {
+GER = { add_to_faction = PAN }
+}
+}
+}

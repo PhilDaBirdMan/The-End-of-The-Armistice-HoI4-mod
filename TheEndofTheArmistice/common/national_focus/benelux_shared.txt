@@ -1,0 +1,72 @@
+joint_focus = {
+	id = BNL_Benelux_econ
+	icon = GFX_focus_generic_influence_benelux
+
+	x = 0
+	y = 0
+
+	offset = {
+		x = 20
+		y = 0
+		trigger = {
+			tag = LUX
+		}
+	}
+
+	offset = {
+		y = 0
+		x = 20
+		trigger = {
+			tag = BEL
+		}
+	}
+
+	offset = {
+        x = 20
+        y = 0
+        trigger = {
+        	tag = HOL
+        }
+    }
+
+
+	cost = 5
+
+	available = {
+		NOT = {
+			has_war_with = BEL
+			has_war_with = HOL
+			has_war_with = LUX
+		}
+	}
+
+    cancel_if_invalid = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+
+	completion_reward_joint_originator = {
+		set_country_flag = BNL_is_benelux_leader
+		# These checks may look unecessary/redundant. It's not, this is needed for the tooltip to look right.
+		
+	completion_reward_joint_member = {
+		country_event = { id = BNL_event.1 hours = 2}
+	}
+}
+}
+
+joint_focus = {
+	id = BNL_delta_engineering
+	icon =
+	relative_position_id = BNL_Benelux_econ
+	x = -2
+	y = 1
+
+}

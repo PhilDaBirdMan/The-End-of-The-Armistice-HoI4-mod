@@ -1,0 +1,14 @@
+focus_tree = {
+    id = SYR_focus_tree
+    country = {
+        base = 0
+        modifier = {
+            add = 25
+            tag = SYR
+        }
+    }
+    continuous_focus_position = { x = 450 y = 1500 }
+    initial_show_position = { focus = LEVANT_out_of_chains }
+
+shared_focus = LEVANT_out_of_chains
+}

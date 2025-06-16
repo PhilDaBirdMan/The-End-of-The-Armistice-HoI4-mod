@@ -1,0 +1,26 @@
+﻿l_english:
+
+ # Focuses
+ LUX_focus_tree: "[LUX.GetName] Focus Tree"
+ LUX_Election_of_1937: "The Election of 1937"
+ LUX_Election_of_1937_desc: "[LUX.GetName] is ready for its next election. [LUX.GetLeader]'s time has come. It's time for the [LUX.GetAdjective] people to get a new prime minister."
+ LUX_Raise_the_Armed_Forces: "Raise the Armed Forces"
+ LUX_Raise_the_Armed_Forces_desc: "[LUX.GetName] needs to defend against tyranny. With [GER.GetLeader] just across the Moselle, [SOV.GetLeader] in Russia, and [ITA.GetLeader] to the south, the world could burst into flames at any moment. We need to be able to hold [8.GetCapitalVictoryPointName] at any cost. "
+ LUX_Moselle_Industry: "Moselle LUX_Moselle_Industry"
+ LUX_Moselle_Industry_desc: "The Moselle is the largest river in our nation, and we do not use it as much as we should. With economic reforms, [LUX.GetLeader] can make [LUX.GetName] the Pride of the Moselle and a model for the Benelux region."
+ LUX_Secure_New_State: "Secure the New Government"
+ LUX_Secure_New_State_desc: "[LUX.GetName] just had their election. Now, [LUX.GetRulingParty] leads the government, and the nation is in disarray after the election. [LUX.GetLeader] has decided to take upon the job of restructuring the government."
+ LUX_KPL_Win: "KPL Victory"
+ LUX_KPL_Win_desc: "The KPL has backed their campaign with the voices of the Left. They shall be the  ones to lead [LUX.GetName]."
+ 
+ #Ideas
+ Elections_of_1937: "Election of 1937"
+ Elections_of_1937_desc: "The upcoming election will decide the fate of [LUX.GetName]. The political state of our nation is in disarray, as our government works harder for re-election and the opposition for their chance at leading the nation."
+ 
+ #Events
+ LUXelection.1.t: "1937 Election"
+ LUXelection.1.desc: "It is time for the next election in [LUX.GetName]. Will [LUX.GetRulingParty] stay in power, or will radicals from the [LUX.GetFascistParty] or the [LUX.GetCommunistParty] take power?"
+ LUXelection.1.c: "Vote in the [LUX.GetCommunistParty]."
+ LUXelection.1.d: "Three more years for [LUX.GetLeader] and [LUX.GetRulingParty]"
+ LUXelection.1.f: "Align with the [GER.GetFascistParty] and [GER.GetFascistLeader]."
+ 
