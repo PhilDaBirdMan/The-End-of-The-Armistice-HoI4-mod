@@ -18,6 +18,7 @@
  Elections_of_1937_desc: "The upcoming election will decide the fate of [LUX.GetName]. The political state of our nation is in disarray, as our government works harder for re-election and the opposition for their chance at leading the nation."
  
  #Events
+ LUXelection: "The Election of 1937"
  LUXelection.1.t: "1937 Election"
  LUXelection.1.desc: "It is time for the next election in [LUX.GetName]. Will [LUX.GetRulingParty] stay in power, or will radicals from the [LUX.GetFascistParty] or the [LUX.GetCommunistParty] take power?"
  LUXelection.1.c: "Vote in the [LUX.GetCommunistParty]."
