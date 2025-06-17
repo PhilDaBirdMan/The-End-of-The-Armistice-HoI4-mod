@@ -1,0 +1,71 @@
+add_namespace = LUXelection
+
+
+
+country_event = {
+    id = LUXelection.1
+    title = LUXelection.1.t
+    desc = LUXelection.1.desc
+
+    is_triggered_only = yes
+    fire_only_once = yes
+trigger = {}
+
+    option = {
+            name = LUXelection.1.c
+            complete_national_focus = LUX_KPL_Win
+        }
+        option = {
+            name = LUXelection.1.d
+            complete_national_focus = LUX_Rietspartei
+        }
+        option = {
+            name = LUXelection.1.f
+            complete_national_focus = LUX_Volksdeutsche_Bewegung
+        }
+    
+}
+
+
+add_namespace = newsevent
+
+news_event = {
+    id = newsevent.1
+    title = {
+        text = newsevent.1.t
+        trigger = {
+            LUX = {has_completed_focus = LUX_Secure_New_State }
+        }
+    }
+    title = {
+        text = my_event.1.t
+    }
+    desc = {
+        text = newsevent.1.desc.a
+        trigger = {
+            tag = POL
+        }
+    }
+    desc = {
+        text = my_event.1.desc
+    }
+    
+    picture = 
+    
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+        name = newsevent.1.a
+        trigger = {
+            tag = LUX
+        }
+    }
+    
+    option = {
+        name = newsevent.1.b
+        trigger = {
+            NOT = { tag = LUX }
+        }
+    }
+}
