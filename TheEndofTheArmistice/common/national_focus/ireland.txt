@@ -1,0 +1,13 @@
+focus_tree = {
+    id = IRE_focus_tree
+    country = {
+        base = 0
+        modifier = {
+            add = 25
+            tag = IRE
+        }
+    }
+focus = {
+id = IRE_bargain
+}
+}
