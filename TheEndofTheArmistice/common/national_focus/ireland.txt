@@ -7,7 +7,15 @@ focus_tree = {
             tag = IRE
         }
     }
-focus = {
-id = IRE_bargain
-}
+
+    focus = {
+        id = IRE_bargain
+        icon = GFX_goal_generic_political_deal
+        x = 6
+        y = 0
+        cost = 5
+        completion_reward = {
+            
+        }
+    }
 }

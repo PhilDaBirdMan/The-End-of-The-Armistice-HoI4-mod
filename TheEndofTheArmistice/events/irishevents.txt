@@ -1,0 +1,7 @@
+add_namespace = irelandnegotiations
+
+country_event = {
+	id = irelandnegotiations.1
+	title = irelandnegotiations.1.t
+	desc = irelandnegotiations.1.desc
+}
