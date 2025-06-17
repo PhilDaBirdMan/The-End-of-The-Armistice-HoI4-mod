@@ -260,7 +260,7 @@ focus_tree = {
 
 	focus = {
 		id = PAN_develop_local_industry
-		icon = GFX_goal_generic_industry
+		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = PAN_invest_in_infrastructure
 		x = 0
 		y = 1
@@ -368,7 +368,7 @@ relative_position_id = PAN_align_USA
 x = 0
 y = 1
 cost = 10
-prerequisite = { focus = PAN_align_with_usa }
+prerequisite = { focus = PAN_align_USA }
 completion_reward = {
 add_stability = 0.05
 set_neutrality = yes

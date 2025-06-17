@@ -10,7 +10,7 @@ focus_tree = {
 
     focus = {
         id = MON_strengthen_the_state
-        icon = GFX_goal_generic_political_reform
+        icon = GFX_focus_generic_workers_and_farmers_rise
         x = 10
         y = 0
         cost = 5
@@ -32,7 +32,8 @@ focus_tree = {
         id = MON_fate_of_the_revolution
         icon = GFX_goal_generic_soviet_politics
         prerequisite = { focus = MON_strengthen_the_state }
-        x = 10
+        relative_position_id = MON_strengthen_the_state
+        x = 0
         y = 1
         cost = 10
         ai_will_do = { factor = 1 }
@@ -48,19 +49,19 @@ focus_tree = {
 # Remain a Soviet Puppet
     focus = {
         id = MON_loyal_to_moscow
-        icon = GFX_goal_generic_soviet_alliance
+        icon = GFX_focus_generic_soviet_politics
         prerequisite = { focus = MON_fate_of_the_revolution }
-        x = 8
-        y = 2
+        relative_position_id = MON_fate_of_the_revolution
+        mutually_exclusive = {
+            focus = MON_path_of_independence
+        }
+        x = -2
+        y = 1
         cost = 8
         ai_will_do = { factor = 1 }
 
         completion_reward = {
             add_stability = 0.05
-            set_autonomy = {
-                target = SOV
-                autonomy_state = puppet
-            }
             add_political_power = 50
         }
     }
@@ -70,8 +71,12 @@ focus_tree = {
         id = MON_path_of_independence
         icon = GFX_goal_generic_independence
         prerequisite = { focus = MON_fate_of_the_revolution }
-        x = 12
-        y = 2
+        relative_position_id = MON_fate_of_the_revolution
+        mutually_exclusive = {
+            focus = MON_loyal_to_moscow
+        }
+        x = 2
+        y = 1
         cost = 10
         ai_will_do = { factor = 1 }
 
