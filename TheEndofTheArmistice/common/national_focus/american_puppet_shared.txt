@@ -1,7 +1,9 @@
 shared_focus = {
 	id = AMPP_respect_overlord
-	icon =
+	icon = gfx_goal_USA
 	cost = 10
+	x = 0
+	y = 0
 	available = {
 		ROOT = {
 			is_subject_of = USA
@@ -13,5 +15,32 @@ shared_focus = {
 			value = 15
 			localization = americanpuppetautonomy
 		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+	
+shared_focus = {
+	id = AMPP_american_armament
+	icon = GFX_goal_generic_armament
+	relative_position_id = AMPP_respect_overlord
+	x = -1
+	y = 1
+	cost = 10
+	available = {
+		ROOT = {
+			is_subject_of = USA
+		}
+	}
+	completion_reward = {	
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = USA
+}
+	}
+	ai_will_do = {
+		factor = 1
 	}
 }

@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.txt": "hoi4",
+    "*.yml": "hoi4",
+    "*.mod": "hoi4"
+  }
+}

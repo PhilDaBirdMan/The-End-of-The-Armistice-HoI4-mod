@@ -27,3 +27,21 @@ focus_tree = {
     }
     continuous_focus_position = { x = 450 y = 1500 }
     initial_show_position = { focus = }
+
+    focus = {
+        id = ALB_Albanian_Nationalism
+        icon = GFX_goal_generic_political_reform
+        x = 0
+        y = 0
+        cost = 5
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 50
+        }
+        ai_will_do = { factor = 1 }
+        available = {
+            has_government = fascism
+        }
+        continue_if_invalid = yes
+    }
+}
