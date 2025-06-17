@@ -16,4 +16,4 @@ In order to run the mod, you will need to do the following:
 4. Launch your Hearts of Iron 4 through either Steam or the Paradox Launcher. If on Steam, do not select "Skip Launcher".
 5. In the Launcher, check to make sure that "The End of The Armistice" shows up as a mod in your library.
 
-Alternatively, you could download the latest finished version off of Paradox Mods, navigate to the launcher, and check for the mod. However, that won't have the most recent version, as it's much easier to publish versions here than to Paradox.
+Alternatively, you could download the latest finished version off of Paradox Mods, navigate to the launcher, and check for the mod. However, that won't have the most recent version, as it's much easier to publish versions here on GitHub than to Paradox Mods.
