@@ -167,10 +167,12 @@ focus_tree = {
         cost = 8
 
         completion_reward = {
-            add_building_construction = {
-                type = industrial_complex
-                level = 1
-                instant_build = yes
+            330 = {            
+                add_building_construction = {                
+                    type = industrial_complex             
+                    level = 1                          
+                    instant_build = yes
+                }
             }
         }
     }
@@ -184,10 +186,12 @@ focus_tree = {
         cost = 8
 
         completion_reward = {
-            add_building_construction = {
-                type = infrastructure
-                level = 2
-                instant_build = yes
+            all_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
             }
         }
     }
@@ -197,28 +201,67 @@ focus_tree = {
     focus = {
         id = MON_claim_tuva
         icon = GFX_goal_generic_territory_or_war
-        prerequisite = { focus = MON_path_of_independence }
+        prerequisite = { focus = MON_path_of_independence focus = MON_loyal_to_moscow }
         x = 16
         y = 3
         cost = 10
 
         completion_reward = {
             add_state_claim = 219  # Tuva's state ID
-            add_named_threat = { threat = 5 name = "Mongolia claims Tuva" }
+            add_named_threat = {
+                threat = 5
+                name = "Mongolia claims Tuva" 
+            }
+            declare_war_on = {
+                target = TAN
+                type = annex_everything
+            }
         }
     }
 
     focus = {
         id = MON_eye_on_china
         icon = GFX_goal_generic_major_war
-        prerequisite = { focus = MON_new_khaganate }
+        prerequisite = { focus = MON_claim_tuva }
         x = 16
         y = 4
         cost = 10
 
         completion_reward = {
-            add_named_threat = { threat = 10 name = "Mongolia eyes Chinese territories" }
-            add_state_claim = 608  # Inner Mongolia
+            add_named_threat = {
+                threat = 10
+                name = "Mongolia eyes Chinese territories" }
+            add_state_claim = 611  # Inner Mongolia
+            add_state_claim = 612  # Inner Mongolia
+            add_state_claim = 616  # Inner Mongolia
+            add_state_claim = 618  # Inner Mongolia           
+            add_state_claim = 621  # Inner Mongolia
+            add_state_claim = 746  # Inner Mongolia
+            add_state_claim = 756  # Inner Mongolia
+            add_state_claim = 760  # Inner Mongolia                        
+            add_state_claim = 761  # Inner Mongolia
+        }
+    }
+    focus = {
+        id = MON_claims_Siberia
+        icon = GFX_goal_generic_major_war
+        prerequisite = { focus = MON_eye_on_china }
+        x = 16
+        y = 5
+        cost = 10
+
+        completion_reward = {
+            add_named_threat = {
+                threat = 10
+                name = "Mongolia eyes Siberia" }
+            add_state_claim = 654
+            add_state_claim = 561
+            add_state_claim = 562
+            add_state_claim = 563        
+            add_state_claim = 564
+            add_state_claim = 566
+            add_state_claim = 567
+            add_state_claim = 568                     
         }
     }
 }

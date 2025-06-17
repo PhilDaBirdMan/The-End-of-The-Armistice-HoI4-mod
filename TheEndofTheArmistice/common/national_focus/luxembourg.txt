@@ -62,7 +62,7 @@ focus_tree = {
         id = LUX_KPL_Win
         icon = GFX_goal_support_communism
         cost = 1
-        prerequisite = {focus = LUX_Election_of_1937 }
+        prerequisite = { focus = LUX_Election_of_1937 }
         mutually_exclusive = { focus = LUX_Volksdeutsche_Bewegung focus = LUX_Rietspartei }
         relative_position_id = LUX_Election_of_1937
         x = -4
