@@ -91,8 +91,9 @@ focus_tree = {
         id = MON_found_national_party
         icon = GFX_goal_generic_political_movement
         prerequisite = { focus = MON_path_of_independence }
-        x = 12
-        y = 3
+        relative_position_id = MON_path_of_independence
+        x = 0
+        y = 1
         cost = 10
         ai_will_do = { factor = 1 }
 
@@ -107,8 +108,9 @@ focus_tree = {
         id = MON_new_khaganate
         icon = GFX_goal_generic_political_pressure
         prerequisite = { focus = MON_found_national_party }
-        x = 12
-        y = 4
+        relative_position_id = MON_found_national_party
+        x = 0
+        y = 1
         cost = 12
         ai_will_do = { factor = 1 }
 
@@ -125,7 +127,8 @@ focus_tree = {
         id = MON_modernize_army
         icon = GFX_goal_generic_army_doctrine
         prerequisite = { focus = MON_strengthen_the_state }
-        x = 6
+        relative_position_id = MON_strengthen_the_state
+        x = -4
         y = 1
         cost = 8
 
@@ -143,8 +146,9 @@ focus_tree = {
         id = MON_expand_cavalry_corps
         icon = GFX_goal_generic_army_motorized
         prerequisite = { focus = MON_modernize_army }
-        x = 6
-        y = 2
+        relative_position_id = MON_modernize_army
+        x = 0
+        y = 1
         cost = 8
 
         completion_reward = {
@@ -162,7 +166,8 @@ focus_tree = {
         id = MON_industrial_awakening
         icon = GFX_goal_generic_construct_civ_factory
         prerequisite = { focus = MON_strengthen_the_state }
-        x = 14
+        relative_position_id = MON_strengthen_the_state
+        x = 4
         y = 1
         cost = 8
 
@@ -181,12 +186,13 @@ focus_tree = {
         id = MON_develop_infrastructure
         icon = GFX_goal_generic_construct_infrastructure
         prerequisite = { focus = MON_industrial_awakening }
-        x = 14
-        y = 2
+        relative_position_id = MON_industrial_awakening
+        x = 0
+        y = 1
         cost = 8
 
         completion_reward = {
-            all_controlled_state = {
+            every_controlled_state = {
                 add_building_construction = {
                     type = infrastructure
                     level = 1
@@ -202,8 +208,9 @@ focus_tree = {
         id = MON_claim_tuva
         icon = GFX_goal_generic_territory_or_war
         prerequisite = { focus = MON_path_of_independence focus = MON_loyal_to_moscow }
-        x = 16
-        y = 3
+        relative_position_id = MON_fate_of_the_revolution
+        x = 0
+        y = 2
         cost = 10
 
         completion_reward = {
@@ -223,8 +230,9 @@ focus_tree = {
         id = MON_eye_on_china
         icon = GFX_goal_generic_major_war
         prerequisite = { focus = MON_claim_tuva }
-        x = 16
-        y = 4
+        relative_position_id = MON_claim_tuva
+        x = 0
+        y = 1
         cost = 10
 
         completion_reward = {
@@ -246,8 +254,9 @@ focus_tree = {
         id = MON_claims_Siberia
         icon = GFX_goal_generic_major_war
         prerequisite = { focus = MON_eye_on_china }
-        x = 16
-        y = 5
+        relative_position_id = MON_eye_on_china
+        x = 0
+        y = 1
         cost = 10
 
         completion_reward = {
