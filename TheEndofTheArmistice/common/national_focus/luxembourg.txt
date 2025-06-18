@@ -49,7 +49,7 @@ focus_tree = {
         available = {
             has_stability > 0.45
             date > 1937.01.01
-            # Elections were June 6, 1937. This is "election prep"
+            # Elections were June 6, 1937. Begins event chain.
         }
         completion_reward = {
             add_ideas = Elections_of_1937
