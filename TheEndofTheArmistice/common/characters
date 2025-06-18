@@ -1,0 +1,24 @@
+LUX_fritz_thielmann = {
+    name = "Fritz Thielmann"
+    portrait_path = "gfx/interface/ideas/LUX_fritz_thielmann.dds"
+
+    advisor = {
+        slot = political_advisor
+        idea_token = LUX_fritz_thielmann_advisor
+        allowed = { always = yes }
+        visible = { always = yes }
+        cost = 150
+        do_effect = { }
+        traits = {
+            communist_revolutionary
+        }
+    }
+
+    available = {
+        has_country_flag = LUX_focus_commie_path
+    }
+
+    visible = {
+        always = yes
+    }
+}
