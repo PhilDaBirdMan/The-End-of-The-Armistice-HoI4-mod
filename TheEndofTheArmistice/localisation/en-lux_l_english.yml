@@ -24,4 +24,11 @@
  LUXelection.1.a: "Fund the Left."
  LUXelection.1.b: "Fund the Centrists."
  LUXelection.1.c: "Fund the Right."
- 
+ LUXelection.1.d: "Don't fund anyone, they're not worth it."
+
+ LUXelection.2.t: "Funding the Left"
+ LUXelection.2.desc: "The various parties on the left are fighting for funds. Who shall we support?"
+
+ #Politics
+LUX_agrarians_long: "Free List of Farmers, the Middle Class and Workers"
+LUX_agrarians: "GLBMA"
