@@ -210,7 +210,7 @@ bookmarks = {
 			ideology = democratic
 			ideas = {}
 			focuses = {
-				PAN_renegotiate_canal
+				PAN_negotiate_canal_treatry
 			}
 			minor = yes
 			}
