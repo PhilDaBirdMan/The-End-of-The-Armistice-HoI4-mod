@@ -21,6 +21,7 @@
  #Ideas
  Elections_of_1937: "Election of 1937"
  Elections_of_1937_desc: "The upcoming election will decide the fate of [LUX.GetName]. The political state of our nation is in disarray, as our government works harder for re-election and the opposition for their chance at leading the nation."
+ LUX_GL: "Guillaume-Luxembourg"
  
  #Events
  LUXelection: "The Election of 1937"
