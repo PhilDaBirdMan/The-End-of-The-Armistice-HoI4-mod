@@ -19,9 +19,9 @@
  
  #Events
  LUXelection: "The Election of 1937"
- LUXelection.1.t: "1937 Election"
- LUXelection.1.desc: "It is time for the next election in [LUX.GetName]. Will [LUX.GetRulingParty] stay in power, or will radicals from the [LUX.GetFascistParty] or the [LUX.GetCommunistParty] take power?"
- LUXelection.1.c: "Vote in the [LUX.GetCommunistParty]."
- LUXelection.1.d: "Three more years for [LUX.GetLeader] and [LUX.GetRulingParty]"
- LUXelection.1.f: "Align with the [GER.GetFascistParty] and [GER.GetFascistLeader]."
+ LUXelection.1.t: "1937 Election Campaign"
+ LUXelection.1.desc: "It is time for the next election in [LUX.GetName]. Whose campaign should we fund?"
+ LUXelection.1.a: "Fund the Left."
+ LUXelection.1.b: "Fund the Centrists."
+ LUXelection.1.c: "Fund the Right."
  
