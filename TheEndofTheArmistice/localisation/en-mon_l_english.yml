@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 #National Focus
   MON_focus_tree: "Mongolia Focus Tree"
@@ -23,10 +23,13 @@
   MON_develop_infrastructure: "Develop Infrastructure"
   MON_develop_infrastructure_desc: "Invest in roads and railways to connect and modernize our country."
   MON_claim_tuva: "Claim Tuva"
-  MON_claim_tuva_desc: "Tuva's just another small steppe nation. We've done it many times before, we can do it again."
+  MON_claim_tuva_desc: "Tuva is just another small steppe nation. We've done it many times before, we can do it again."
   MON_eye_on_china: "Eye on China"
   MON_eye_on_china_desc: "We can go South for opportunities and potential expansion into China, as the warlords fight the government and Japan.."
 
   #Military
   land_doctrine_bonus: "Land Doctrine Bonus"
   land_doctrine_bonus_desc: "A bonus to our land doctrine research."
+
+  #Ideas
+  MON_UBR: "Ulaanbaatar Railroad"
