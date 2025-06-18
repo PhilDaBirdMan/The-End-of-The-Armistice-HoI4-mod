@@ -1,2 +1,12 @@
 ideas = {
+	country = {
+		Canal_Economy = {
+			modifier = {
+				political_power_gain = 0.1
+				monthly_population = 0.05
+				trade_opinion_factor = 0.8
+				stability_weekly = 0.01
+			}
+		}
+	}
 }
