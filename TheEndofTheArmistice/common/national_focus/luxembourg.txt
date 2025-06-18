@@ -63,7 +63,7 @@ focus_tree = {
         icon = GFX_goal_support_communism
         cost = 1
         prerequisite = { focus = LUX_Election_of_1937 }
-        mutually_exclusive = { focus = LUX_The_Right focus = LUX_The_Center }
+        mutually_exclusive = { focus = LUX_The_Right focus = LUX_The_Center focus = LUX_no_politics }
         relative_position_id = LUX_Election_of_1937
         x = -4
         y = 1
@@ -84,7 +84,7 @@ popularity = 0.075
         icon = GFX_goal_support_fascism
         cost = 1
         prerequisite = {focus = LUX_Election_of_1937 }
-        mutually_exclusive = { focus = LUX_The_Left focus = LUX_The_Center }
+        mutually_exclusive = { focus = LUX_The_Left focus = LUX_The_Center focus = LUX_no_politics }
         relative_position_id = LUX_Election_of_1937
         x = 4
         y = 1
@@ -101,7 +101,7 @@ popularity = 0.075
         icon = GFX_goal_support_democracy
         cost = 1
         prerequisite = {focus = LUX_Election_of_1937 }
-        mutually_exclusive = { focus = LUX_The_Right focus = LUX_The_Left }
+        mutually_exclusive = { focus = LUX_The_Right focus = LUX_The_Left focus = LUX_no_politics}
         relative_position_id = LUX_Election_of_1937
         x = 0
         y = 1
