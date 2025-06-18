@@ -10,8 +10,13 @@
  LUX_Moselle_Industry_desc: "The Moselle is the largest river in our nation, and we do not use it as much as we should. With economic reforms, [LUX.GetLeader] can make [LUX.GetName] the Pride of the Moselle and a model for the Benelux region."
  LUX_Secure_New_State: "Secure the New Government"
  LUX_Secure_New_State_desc: "[LUX.GetName] just had their election. Now, [LUX.GetRulingParty] leads the government, and the nation is in disarray after the election. [LUX.GetLeader] has decided to take upon the job of restructuring the government."
- LUX_KPL_Win: "KPL Victory"
- LUX_KPL_Win_desc: "The KPL has backed their campaign with the voices of the Left. They shall be the  ones to lead [LUX.GetName]."
+ LUX_The_Left: "Fund the Left"
+ LUX_The_Left_desc: "Backing the Left, with the socialists, agrarians, and communists seems beneficial for our people."
+ LUX_The_Center: "Fund the Centre"
+ LUX_The_Center_desc: "Backing the Center, with the Liberals, pure centrists, and conservatives seems beneficial for our nation."
+ LUX_The_Right: "Fund the Right"
+ LUX_The_Right_desc: "Backing the Right, with the fascists, may be the new path for [LUX.GetName]."
+ 
  
  #Ideas
  Elections_of_1937: "Election of 1937"
