@@ -1,4 +1,5 @@
-﻿l_english:
+l_english:
+  #Focuses
   PAN_focus_tree: "Panama Focus Tree"
   PAN_focus_tree_desc: "The national focus tree for Panama."
   PAN_secure_sovereignty_canal: "Secure Sovereignty over the Canal"
@@ -39,3 +40,7 @@
   PAN_join_allies_desc: "Join the Allied powers to ensure Panama's security."
   PAN_pursue_axis_cooperation: "Pursue Axis Cooperation"
   PAN_pursue_axis_cooperation_desc: "Explore cooperation with the Axis powers for strategic advantage."
+
+  #Ideas
+  Canal_Economy: "Canal-based Economy"
+  Canal_Economy_desc: "The Panama Canal runs through [PAN.GetName]. It's a major part of our economy and politics."
