@@ -636,6 +636,7 @@ characters = {
 			}
 		}
 	}
+
 	LUX_martin_karp={
 		advisor={
 			slot = political_advisor
@@ -655,6 +656,7 @@ characters = {
 			}
 		}
 	}
+
     LUX_fritz_thielmann = {
     advisor = {
         slot = political_advisor
@@ -667,4 +669,10 @@ characters = {
         }
     
     }
+	name = "Fritz Thielmann"
+	portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
 }
