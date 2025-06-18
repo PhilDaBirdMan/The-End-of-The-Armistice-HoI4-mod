@@ -48,6 +48,12 @@ set_party_name = {
         }
         option = {
             name = LUXelection.2.b
+set_party_name = {
+    ideology = communism
+    long_name = LUX_KPL_long
+    name = LUX_KPL
+}
+
 
         }
         option = {
