@@ -9,3 +9,31 @@ ideas = {
         }
     }
 }
+
+ideas = {
+		MON_UBR = {
+			
+			picture = idea_generic_railroads
+
+			allowed = {
+				original_tag = MON
+			}
+			
+			research_bonus = {
+				train_tech = 0.05
+			}
+
+			modifier = {
+				rail_way_max_level_terrain_limit = 0.15
+                railway_gun_bombardment_factor = 0.33
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+			
+			traits = { railway_company }
+		}
+	}
+
+}
