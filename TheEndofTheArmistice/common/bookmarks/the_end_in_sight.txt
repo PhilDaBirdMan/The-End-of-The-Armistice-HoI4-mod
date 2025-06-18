@@ -208,9 +208,11 @@ bookmarks = {
 		"PAN" = { 
 			history = "PAN_the_end_in_sight_desc"
 			ideology = democratic
-			ideas = {}
+			ideas = {
+				Canal_Economy
+			}
 			focuses = {
-				PAN_negotiate_canal_treatry
+				PAN_negotiate_canal_treaty
 			}
 			minor = yes
 			}
