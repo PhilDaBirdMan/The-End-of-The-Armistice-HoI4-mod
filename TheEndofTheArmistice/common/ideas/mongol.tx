@@ -11,6 +11,7 @@ ideas = {
 }
 
 ideas = {
+	industrial_concern = {
 		MON_UBR = {
 			
 			picture = idea_generic_railroads
