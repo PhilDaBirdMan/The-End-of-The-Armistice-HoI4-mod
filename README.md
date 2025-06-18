@@ -1,9 +1,9 @@
 This is a mod for Hearts of Iron IV. It is not designed for you to run in Europa Universalis IV, Victoria III, Crusader Kings III, a standard compiler, or literally anywhere else. 
 This project is a mod that will give every country flavor, without being as confusing as Kaiserreich, as large as Millenium Dawn or TNO, and not an overhaul like Equestria at War.
 This mod is intended to be three things:
-1. An alternative to Road to 56
-2. An overhaul for Minor Nations without trees, like Panama and the Philippines
-3. A free way to experience the ability to play any nation.
+1. An alternative to Road to 56, a current mod that adds free focus trees for every nation 
+2. An overhaul for Minor Nations without trees, like Panama and the Philippines, instead of just giving them a generic or simple tree, but going the full nine yards.
+3. A redesign for colonies.
 
 Currently, the mod is made for version 1.16.8 (Countenance).
 In order to run the mod, you will need to do the following:
