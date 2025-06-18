@@ -59,40 +59,36 @@ focus_tree = {
     }
 
     focus = {
-        id = LUX_KPL_Win
+        id = LUX_The_Left
         icon = GFX_goal_support_communism
         cost = 1
         prerequisite = { focus = LUX_Election_of_1937 }
-        mutually_exclusive = { focus = LUX_Volksdeutsche_Bewegung focus = LUX_Rietspartei }
+        mutually_exclusive = { focus = LUX_The_Right focus = LUX_The_Center }
         relative_position_id = LUX_Election_of_1937
         x = -4
         y = 1
         completion_reward = {
-            set_politics = {
-    ruling_party = communism
-    elections_allowed = no
-}
             add_popularity = {
     ideology = communism
     popularity = 0.15
 }
+            add_popularity = {
+ideology = democracy
+popularity = 0.075
         }
     }
+}
 
     focus = {
-        id = LUX_Volksdeutsche_Bewegung
+        id = LUX_The_Right
         icon = GFX_goal_support_fascism
         cost = 1
         prerequisite = {focus = LUX_Election_of_1937 }
-        mutually_exclusive = { focus = LUX_KPL_Win focus = LUX_Rietspartei }
+        mutually_exclusive = { focus = LUX_The_Left focus = LUX_The_Center }
         relative_position_id = LUX_Election_of_1937
         x = 4
         y = 1
         completion_reward = {
-            set_politics = {
-    ruling_party = fascism
-    elections_allowed = no
-}
             add_popularity = {
     ideology = fascism
     popularity = 0.15
@@ -101,11 +97,11 @@ focus_tree = {
     }
 
     focus = {
-        id = LUX_Rietspartei
+        id = LUX_The_Center
         icon = GFX_goal_support_democracy
         cost = 1
         prerequisite = {focus = LUX_Election_of_1937 }
-        mutually_exclusive = { focus = LUX_Volksdeutsche_Bewegung focus = LUX_KPL_Win }
+        mutually_exclusive = { focus = LUX_The_Right focus = LUX_The_Left }
         relative_position_id = LUX_Election_of_1937
         x = 0
         y = 1
@@ -114,11 +110,6 @@ focus_tree = {
     ideology = democratic
     popularity = 0.15
 }
-        set_politics = {
-    ruling_party = democratic
-    elections_allowed = yes
-    election_frequency = 48
-}
         }
     }
 
@@ -126,10 +117,10 @@ focus_tree = {
         id = LUX_Secure_New_State
         icon = GFX_focus_generic_national_security
         cost = 1
-        prerequisite = {focus = LUX_Rietspartei focus = LUX_KPL_Win focus = LUX_Volksdeutsche_Bewegung }
+        prerequisite = {}
         relative_position_id = LUX_Election_of_1937
         x = 0
-        y = 2
+        y = 3
         completion_reward = { }
     }
 
@@ -141,7 +132,7 @@ focus_tree = {
         prerequisite = {focus = LUX_Secure_New_State}
         relative_position_id = LUX_Election_of_1937
         x = -1
-        y = 3
+        y = 4
         completion_reward = {
 
         }
