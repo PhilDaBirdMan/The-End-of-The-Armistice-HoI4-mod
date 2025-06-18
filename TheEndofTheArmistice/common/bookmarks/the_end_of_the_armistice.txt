@@ -1,1 +1,10 @@
-eee
+bookmarks = {
+	bookmark = {
+		name = "the_end_of_the_armistice"
+		desc = "the_end_of_the_armistice_desc"
+		date = 1939.9.1.5
+		picture = "GFX_select_date_1939"
+		default_country = "GER"
+		default = no
+	}
+}
