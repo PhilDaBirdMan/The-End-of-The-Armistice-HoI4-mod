@@ -195,4 +195,22 @@ bookmarks = {
 
 
 		# minors
-		
+		"LUX" = { 
+			history = "LUX_the_end_in_sight_desc"
+			ideology = democratic
+			ideas = {}
+			focuses = {
+				LUX_Election_of_1937
+			}
+			minor = yes
+			}
+
+		"PAN" = { 
+			history = "PAN_the_end_in_sight_desc"
+			ideology = democratic
+			ideas = {}
+			focuses = {
+				PAN_renegotiate_canal
+			}
+			minor = yes
+			}
