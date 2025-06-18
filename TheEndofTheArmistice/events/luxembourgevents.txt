@@ -13,19 +13,17 @@ trigger = {}
 
     option = {
             name = LUXelection.1.c
-            complete_national_focus = LUX_KPL_Win
         }
         option = {
             name = LUXelection.1.d
-            complete_national_focus = LUX_Rietspartei
         }
         option = {
             name = LUXelection.1.f
-            complete_national_focus = LUX_Volksdeutsche_Bewegung
         }
     
 }
 
+country_event = {}
 
-add_namespace = newsevent
+
 
