@@ -95,4 +95,246 @@ focus_tree = {
             }
         }
     }
+
+    default = no
+    continuous_focus_position = { x = 0 y = 0 }
+
+    focus = {
+        id = PHI_1935_constitution
+        icon = GFX_goal_generic_political_reform
+        x = 0
+        y = 0
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+            set_country_flag = PHI_focus_enabled
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    # -------------------
+    # PATH: USA ALIGNMENT
+    # -------------------
+
+    focus = {
+        id = PHI_commonwealth_cooperation
+        icon = GFX_goal_generic_allies_build_infantry
+        prerequisite = { focus = PHI_1935_constitution }
+        x = -2
+        y = 1
+        cost = 10
+        available = {
+            is_puppet_of = USA
+        }
+        completion_reward = {
+            add_stability = 0.05
+            add_opinion_modifier = { target = USA modifier = improved_relations }
+        }
+    }
+
+    focus = {
+        id = PHI_american_aid
+        icon = GFX_goal_generic_army_expansion
+        prerequisite = { focus = PHI_commonwealth_cooperation }
+        x = -2
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+            }
+        }
+    }
+
+    focus = {
+        id = PHI_pacific_defense
+        icon = GFX_goal_generic_fortify_city
+        prerequisite = { focus = PHI_american_aid }
+        x = -2
+        y = 3
+        cost = 10
+        completion_reward = {
+            add_building_construction = {
+                type = coastal_bunker
+                level = 3
+                province = 6710 # Manila province
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = PHI_statehood_aspirations
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = PHI_pacific_defense }
+        x = -2
+        y = 4
+        cost = 10
+        completion_reward = {
+            add_political_power = 100
+            add_autonomy_ratio = 0.1
+        }
+    }
+
+    # -------------------
+    # PATH: INDEPENDENCE
+    # -------------------
+
+    focus = {
+        id = PHI_push_for_independence
+        icon = GFX_goal_generic_independence
+        prerequisite = { focus = PHI_1935_constitution }
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_political_power = 75
+            add_autonomy_ratio = 0.25
+        }
+    }
+
+    focus = {
+        id = PHI_1941_plebiscite
+        icon = GFX_goal_generic_political_reform
+        prerequisite = { focus = PHI_push_for_independence }
+        x = 2
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 50
+        }
+    }
+
+    # ---- DEMOCRATIC ----
+    focus = {
+        id = PHI_elect_roxas
+        icon = GFX_goal_generic_democracy
+        prerequisite = { focus = PHI_1941_plebiscite }
+        x = 1
+        y = 3
+        cost = 10
+        completion_reward = {
+            add_political_power = 75
+            set_politics = {
+                ruling_party = democratic
+                elections_allowed = yes
+            }
+        }
+    }
+
+    focus = {
+        id = PHI_pacific_federation
+        icon = GFX_goal_generic_major_alliance
+        prerequisite = { focus = PHI_elect_roxas }
+        x = 1
+        y = 4
+        cost = 10
+        completion_reward = {
+            create_faction = "Pacific Federation"
+        }
+    }
+
+    # ---- COMMUNIST ----
+    focus = {
+        id = PHI_support_huks
+        icon = GFX_goal_generic_communism
+        prerequisite = { focus = PHI_1941_plebiscite }
+        x = 3
+        y = 3
+        cost = 10
+        completion_reward = {
+            add_stability = -0.1
+            add_political_power = 50
+            set_party_name = { ideology = communism long = "Hukbalahap" short = "HUK" }
+            set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+            }
+        }
+    }
+
+    focus = {
+        id = PHI_join_comintern
+        icon = GFX_goal_support_communist_coup
+        prerequisite = { focus = PHI_support_huks }
+        x = 3
+        y = 4
+        cost = 10
+        completion_reward = {
+            add_to_faction = SOV
+        }
+    }
+
+    # ---- FASCIST ----
+    focus = {
+        id = PHI_rise_katipunan
+        icon = GFX_goal_generic_demand_territory
+        prerequisite = { focus = PHI_1941_plebiscite }
+        x = 5
+        y = 3
+        cost = 10
+        completion_reward = {
+            add_political_power = 100
+            add_stability = -0.05
+            set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+            }
+        }
+    }
+
+    focus = {
+        id = PHI_tagalog_empire
+        icon = GFX_goal_generic_territory_or_war
+        prerequisite = { focus = PHI_rise_katipunan }
+        x = 5
+        y = 4
+        cost = 10
+        completion_reward = {
+            add_named_threat = { threat = 10 name = "PHI_Expansionism" }
+            add_claim_by = INS
+            add_claim_by = MAL
+        }
+    }
+
+    # -------------------
+    # INDUSTRY
+    # -------------------
+
+    focus = {
+        id = PHI_rebuild_archipelago
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = PHI_1935_constitution }
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_building_slots = 3
+            add_building_construction = {
+                type = civilian_factory
+                level = 2
+                province = 6710
+                instant_build = no
+            }
+        }
+    }
+
+    focus = {
+        id = PHI_shipyards_of_manila
+        icon = GFX_goal_generic_construct_naval_dockyard
+        prerequisite = { focus = PHI_rebuild_archipelago }
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_building_construction = {
+                type = dockyard
+                level = 2
+                province = 6710
+                instant_build = no
+            }
+        }
+    }
 }
