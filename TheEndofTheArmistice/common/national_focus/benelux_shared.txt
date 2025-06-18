@@ -56,18 +56,16 @@ joint_focus = {
 		add_political_power = 50
 		add_stability = 0.05
 		add_war_support = 0.05
-		LUX = { add_to_faction = BEL }
-		LUX = { add_to_faction = HOL }
-		HOL = { add_to_faction = BEL }
-		HOL = { add_to_faction = LUX }
-		BEL = { add_to_faction = HOL }
-		BEL = { add_to_faction = LUX }
 	}
 	completion_reward_joint_originator = {
 		add_political_power = 25
 		add_stability = 0.02
 		create_faction = "Benelux Military and Economic Union"
+		add_to_faction = LUX
+		add_to_faction = BEL
+		add_to_faction = HOL
 	}
+	
 }
 
 
