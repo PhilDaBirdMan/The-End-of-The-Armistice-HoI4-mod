@@ -83,13 +83,13 @@ focus_tree = {
         y = 1
         completion_reward = {
             add_popularity = {
-    ideology = communism
-    popularity = 0.15
-}
+                ideology = communism
+                popularity = 0.1
+            }
             add_popularity = {
-ideology = democracy
-popularity = 0.075
-        }
+                ideology = democractic
+                popularity = 0.075
+            }
     }
 }
 
@@ -128,6 +128,7 @@ popularity = 0.075
     }
     focus = {
         id = LUX_no_politics
+        icon = GFX_goal_generic_neutrality_focus
         cost = 5
         prerequisite = { focus = LUX_Election_of_1937 }
         mutually_exclusive = { focus = LUX_The_Right focus = LUX_The_left focus = LUX_The_Center }
