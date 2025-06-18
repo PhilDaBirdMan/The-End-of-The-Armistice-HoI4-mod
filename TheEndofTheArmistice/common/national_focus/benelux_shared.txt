@@ -74,8 +74,8 @@ joint_focus = {
 joint_focus = {
 	id = BNL_delta_engineering
 	icon = GFX_focus_generic_engineering
-	relative_position_id = BNL_Benelux_econ
-	x = -2
+	relative_position_id = BNL_Benelux_group
+	x = 0
 	y = 1
 	cost = 35
 	prerequisite = {	focus = BNL_Benelux_group }

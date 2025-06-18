@@ -20,9 +20,15 @@ country_event = {
         }
         option = {
             name = LUXelection.1.b
+            country_event = {
+    id = LUXelection.4
+    days = 5
         }
         option = {
             name = LUXelection.1.c
+            country_event = {
+    id = LUXelection.3
+    days = 5
         }
     option = {
             name = LUXelection.1.d
@@ -50,8 +56,8 @@ set_party_name = {
             name = LUXelection.2.b
 set_party_name = {
     ideology = communism
-    long_name = LUX_KPL_long
-    name = LUX_KPL
+    long_name = LUX_communism_party_long
+    name = LUX_communism_party
 }
 
 
@@ -65,6 +71,90 @@ set_party_name = {
 }
         }
     }
+
+
+country_event = {
+    id = LUXelection.3
+    title = LUXelection.3.t
+    desc = LUXelection.3.desc
+
+    is_triggered_only = yes
+    fire_only_once = yes
+trigger = {}
+
+    option = {
+            name = LUXelection.3.a
+set_party_name = {
+    ideology = fascism
+    long_name = LUX_fascism_party_long
+    name = LUX_fascism_party
+}
+        }
+        option = {
+            name = LUXelection.2.b
+set_party_name = {
+    ideology = fascism
+    long_name = LUX_NSDAP_long
+    name = LUX_NSDAP
+}
+
+
+        }
+        option = {
+            name = LUXelection.2.c
+set_party_name = {
+    ideology = neutrality
+    long_name = LUX_neutrality_party
+    name = LUX_neutrality_party
+}
+        }
+    }
+
+
+country_event = {
+    id = LUXelection.4
+    title = LUXelection.4.t
+    desc = LUXelection.4.desc
+
+    is_triggered_only = yes
+    fire_only_once = yes
+trigger = {}
+
+    option = {
+            name = LUXelection.4.a
+set_party_name = {
+    ideology = democracy
+    long_name = LUX_de
+    name = LUX_fascism_party
+}
+        }
+        option = {
+            name = LUXelection.2.b
+set_party_name = {
+    ideology = fascism
+    long_name = LUX_NSDAP_long
+    name = LUX_NSDAP
+}
+
+
+        }
+        option = {
+            name = LUXelection.2.c
+set_party_name = {
+    ideology = neutrality
+    long_name = LUX_neutrality_party
+    name = LUX_neutrality_party
+}
+        }
+    }
+
+
+
+
+
+
+
+
 
 
 
