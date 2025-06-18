@@ -12,18 +12,53 @@ country_event = {
 trigger = {}
 
     option = {
+            name = LUXelection.1.a
+country_event = {
+    id = LUXelection.2
+    days = 5
+}
+        }
+        option = {
+            name = LUXelection.1.b
+        }
+        option = {
             name = LUXelection.1.c
         }
-        option = {
+    option = {
             name = LUXelection.1.d
-        }
-        option = {
-            name = LUXelection.1.f
-        }
-    
+    }
 }
 
-country_event = {}
+country_event = {
+    id = LUXelection.2
+    title = LUXelection.2.t
+    desc = LUXelection.2.desc
+
+    is_triggered_only = yes
+    fire_only_once = yes
+trigger = {}
+
+    option = {
+            name = LUXelection.2.a
+set_party_name = {
+    ideology = communism
+    long_name = LUX_agrarians_long
+    name = LUX_agrarians
+}
+        }
+        option = {
+            name = LUXelection.2.b
+
+        }
+        option = {
+            name = LUXelection.2.c
+set_party_name = {
+    ideology = democracy
+    long_name = LUX_socialists_long
+    name = LUX_socialists
+}
+        }
+    }
 
 
 
