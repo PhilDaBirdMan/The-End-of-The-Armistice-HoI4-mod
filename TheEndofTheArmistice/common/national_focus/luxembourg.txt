@@ -158,7 +158,6 @@ popularity = 0.075
         id = LUX_welfare
         icon = GFX_focus_SWE_hygienic_housing
         cost = 10
-        prerequisite = {focus = LUX_Rietspartei focus = LUX_KPL_Win}
         prerequisite = {focus = LUX_Secure_New_State}
         relative_position_id = LUX_Election_of_1937
         x = -1
