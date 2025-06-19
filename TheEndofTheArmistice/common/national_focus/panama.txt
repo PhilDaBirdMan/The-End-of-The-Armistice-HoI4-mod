@@ -394,7 +394,7 @@ ENG = { add_to_faction = PAN }
 		x = 20
 		y = 0
 		mutually_exclusive = {
-			PAN_align_USA
+			focus = PAN_align_USA
 		}
 		cost = 10
 		available = {

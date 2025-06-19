@@ -26,7 +26,7 @@ focus_tree = {
         }
     }
     continuous_focus_position = { x = 450 y = 1500 }
-    initial_show_position = { focus = AMPP_respect_overlord  }
+    initial_show_position = { focus = PHI_pacific_defense  }
 
     shared_focus = AMPP_respect_overlord
 
