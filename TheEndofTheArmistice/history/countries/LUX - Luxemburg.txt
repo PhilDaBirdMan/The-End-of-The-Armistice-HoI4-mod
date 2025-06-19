@@ -11,6 +11,7 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	basic_train = 1
+	radio = 1
 }
 
 IF = {
@@ -46,6 +47,7 @@ recruit_character = LUX_pierre_krier
 recruit_character = LUX_martin_karp
 recruit_character = LUX_guillaume_konsbruck
 recruit_character = LUX_felix_of_luxembourg
+recruit_character = LUX_fritz_thielmann
 
 
 # 1939 Scenario
