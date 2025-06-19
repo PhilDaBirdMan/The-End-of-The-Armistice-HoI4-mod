@@ -216,3 +216,18 @@ bookmarks = {
 			}
 			minor = yes
 			}
+		"SWI" = { 
+			history = "SWI_the_end_in_sight_desc"
+			ideology = democratic
+			ideas = {
+				SWI_neutrality
+				SWI_federalism
+			}
+			focuses = {
+				SWI_maintain_neutrality
+				SWI_reform_the_army
+			}
+			minor = yes
+			}
+	}
+}
