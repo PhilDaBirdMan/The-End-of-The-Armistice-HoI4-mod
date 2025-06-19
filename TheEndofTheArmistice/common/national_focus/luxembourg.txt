@@ -31,6 +31,9 @@ focus_tree = {
     focus = {
         id = LUX_Military_Industry
         icon = GFX_goal_generic_construct_mil_factory
+				search_filters = {
+					FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT
+				}
         x = 2
         y = 0
         cost = 10
@@ -57,6 +60,9 @@ focus_tree = {
     focus = {
         id = LUX_Election_of_1937
         icon = GFX_focus_generic_election
+				search_filters = {
+					FOCUS_FILTER_POLITICAL_CHARACTER
+				}
         x = 0
         y = 0
         cost = 5
@@ -75,6 +81,9 @@ focus_tree = {
     focus = {
         id = LUX_The_Left
         icon = GFX_goal_support_communism
+search_filters = {
+					FOCUS_FILTER_POLITICAL_CHARACTER
+				}
         cost = 1
         prerequisite = { focus = LUX_Election_of_1937 }
         mutually_exclusive = { focus = LUX_The_Right focus = LUX_The_Center focus = LUX_no_politics }
@@ -96,6 +105,9 @@ focus_tree = {
     focus = {
         id = LUX_The_Right
         icon = GFX_goal_support_fascism
+search_filters = {
+					FOCUS_FILTER_POLITICAL_CHARACTER
+				}
         cost = 1
         prerequisite = {focus = LUX_Election_of_1937 }
         mutually_exclusive = { focus = LUX_The_Left focus = LUX_The_Center focus = LUX_no_politics }
@@ -113,6 +125,9 @@ focus_tree = {
     focus = {
         id = LUX_The_Center
         icon = GFX_goal_support_democracy
+search_filters = {
+					FOCUS_FILTER_POLITICAL_CHARACTER
+				}
         cost = 1
         prerequisite = {focus = LUX_Election_of_1937 }
         mutually_exclusive = { focus = LUX_The_Right focus = LUX_The_Left focus = LUX_no_politics}
@@ -129,6 +144,9 @@ focus_tree = {
     focus = {
         id = LUX_no_politics
         icon = GFX_goal_generic_neutrality_focus
+search_filters = {
+					FOCUS_FILTER_POLITICAL_CHARACTER
+				}
         cost = 5
         prerequisite = { focus = LUX_Election_of_1937 }
         mutually_exclusive = { focus = LUX_The_Right focus = LUX_The_left focus = LUX_The_Center }
@@ -158,6 +176,9 @@ focus_tree = {
     focus = {
         id = LUX_welfare
         icon = GFX_focus_SWE_hygienic_housing
+search_filters = {
+					FOCUS_FILTER_POLITICAL_CHARACTER
+				}
         cost = 10
         prerequisite = {focus = LUX_Secure_New_State}
         relative_position_id = LUX_Election_of_1937
