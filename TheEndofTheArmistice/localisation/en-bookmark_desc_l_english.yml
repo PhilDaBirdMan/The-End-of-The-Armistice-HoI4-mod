@@ -1,7 +1,7 @@
 l_english:
   
-  the_end_in_sight: "The End in Sight"
-  the_end_in_sight_desc: "The 20-year armistice Ferdinand Foch predicted in 1919 is coming to a close. With Hitler's expansionist ideals, Stalin's purges, Mussolini's war in Ethiopia, and Hirohito's imperial ambitions, the world is poised for another major war."
+  the_end_in_sight:0 "The End in Sight"
+  the_end_in_sight_desc:0 "The 20-year armistice Ferdinand Foch predicted in 1919 is coming to a close. With Hitler's expansionist ideals, Stalin's purges, Mussolini's war in Ethiopia, and Hirohito's imperial ambitions, the world is poised for another major war."
   
 
   #majors
