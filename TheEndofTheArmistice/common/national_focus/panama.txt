@@ -34,7 +34,7 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = PAN_secure_sovereignty_canal }
         completion_reward = {
-            add_stability = 0.05
+            add_ideas = National_Identity
         }
     }
 
@@ -387,16 +387,37 @@ completion_reward = {
 ENG = { add_to_faction = PAN }
 }
 }
-focus = {
-id = PAN_pursue_axis_cooperation
-icon = GFX_goal_generic_axis
-relative_position_id = PAN_align_USA
-x = 4
-y = 1
-cost = 10
-prerequisite = { focus = PAN_align_USA }
-completion_reward = {
-GER = { add_to_faction = PAN }
-}
-}
+
+	focus = {
+		id = PAN_Panama_first
+		icon = GFX_goal_generic_demand_territory
+		x = 20
+		y = 0
+		mutually_exclusive = {
+			PAN_align_USA
+		}
+		cost = 10
+		available = {
+			NOT = {
+				is_in_faction_with = USA
+			}
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = PAN_pursue_axis_cooperation
+		icon = GFX_goal_generic_axis
+		relative_position_id = PAN_Panama_first
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = PAN_Panama_first }
+		completion_reward = {
+			GER = { country_event = panamaandworld.1 }
+		}
+	}
 }

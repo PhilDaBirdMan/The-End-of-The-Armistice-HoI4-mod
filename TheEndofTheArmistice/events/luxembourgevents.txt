@@ -24,6 +24,7 @@ country_event = {
     id = LUXelection.4
     days = 5
         }
+    }
         option = {
             name = LUXelection.1.c
             country_event = {
@@ -32,6 +33,7 @@ country_event = {
         }
     option = {
             name = LUXelection.1.d
+        }
     }
 }
 

@@ -1,0 +1,19 @@
+add_namespace = panamaandworld
+
+country_event = {
+	id = panamaandworld.1
+    title = panamaandworld.1.t
+    desc = panamaandworld.1.desc
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {}
+
+    option = {
+            name = panamaandworld.1.a
+        }
+
+     option = {
+        name = panamaandworld.1.b
+    }
+ }

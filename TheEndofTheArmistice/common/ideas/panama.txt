@@ -8,5 +8,12 @@ ideas = {
 				stability_weekly = 0.01
 			}
 		}
+		National_Identity = {
+			modifier = {
+				political_power_gain = 0.05
+				weekly_war_support = 0.01
+				stability_weekly = 0.005
+			}
+		}
 	}
 }
