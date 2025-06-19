@@ -188,6 +188,20 @@ bookmarks = {
 				SOV_the_supreme_soviet
 			}	
 		}
+		"POL"={
+			history = "POL_the_end_in_sight_desc"
+			ideology = neutrality
+			ideas = {
+				POL_falangist_propaganda
+				POL_polish_military_reform
+				POL_polish_independence
+			}
+			focuses = {
+				POL_maintain_the_intermarium
+				POL_reform_the_army
+				POL_poland_leads
+			}
+		}
 
 		"---"={
 			history = "OTHER_the_end_in_sight_desc"
@@ -229,6 +243,15 @@ bookmarks = {
 			}
 			minor = yes
 			}
+		"DNZ" = {
+			history = "DNZ_the_end_in_sight_desc"
+			ideology = fascism
+			ideas = {}
+			focuses = {}
+			minor = yes
+			}
+		}
+
 			effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

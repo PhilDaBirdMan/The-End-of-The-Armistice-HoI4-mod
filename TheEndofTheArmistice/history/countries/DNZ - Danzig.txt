@@ -86,6 +86,12 @@ if = {
 		basic_torpedo = 1
 	}
 }
+POL = {
+	set_autonomy = {
+		target = DNZ
+		autonomy_state = autonomy_personal_union
+	}
+}
 
 set_politics = {
 	ruling_party = fascism
