@@ -38,8 +38,9 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 50
-			country_event = { id = DNZ.1 }
+			country_event = { id = danzigevents.1 }
 		}
 		ai_will_do = { factor = 1 }
 		continue_if_invalid = yes
 	}
+}

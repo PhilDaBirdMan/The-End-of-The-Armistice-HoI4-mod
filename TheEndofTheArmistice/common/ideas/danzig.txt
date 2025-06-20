@@ -13,7 +13,13 @@ ideas = {
 				war_support_factor = 0.005
 				fascism_drift = 0.001
 			}
-
+		}
+		Danzig_independent = {
+			modifier = {
+				political_power_gain = 0.075
+				stability_weekly = 0.0075
+				neutrality_drift = 0.001
+			}
 		}
 	}
 }

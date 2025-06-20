@@ -1,0 +1,17 @@
+﻿l_english:
+
+  #Focuses
+  DNZ_focus_tree: "Danzig Focus Tree"
+  DNZ_focus_tree_desc: "The national focus tree for Danzig."
+  DNZ_fate_of_danzig: "Fate of Danzig"
+  DNZ_fate_of_danzig_desc: "Danzig is a city-state fromed out of [GER.GetName]. However, with an influx of [POL.GetAdjective] refugees, the city has become a hotbed of [POL.GetAdjective] politics. We must decide what to do with it."
+
+  #Events
+  danzigevents.1: "The Danzig Question"
+  danzigevents.1.desc: "The city of Danzig has been a point of contention between [GER.GetName] and [POL.GetName]. With the rise of [POL.GetAdjective] sentiment in the city, we must decide how to handle this situation."
+  danzigevents.1.a: "We must join [GER.GetName]. We're a [GER.GetAdjective] city after all."
+  danzigevents.1.b: "We must join [POL.GetName]. We were once part of [POL.GetName], and we must return to our roots."
+  danzigevents.1.c: "We must grant Danzig independence and chart our own course. We are a city-state, and we must act like one."
+
+  #Ideas
+  

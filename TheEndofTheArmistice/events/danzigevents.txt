@@ -8,11 +8,17 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = danzigevents.1.a
+		add_ideas = Danzig_german
 		
 	}
 	
 	option = {
 		name = danzigevents.1.b
-		
+		add_ideas = Danzig_polish
+	}
+
+	option = {
+		name = danzigevents.1.c
+		add_ideas = Danzig_independent
 	}
 }
