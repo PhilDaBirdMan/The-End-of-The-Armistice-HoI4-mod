@@ -56,7 +56,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
+			ideology = absolute_monarchism
 			traits = { LUX_grand_duchess_of_luxembourg }
 			expire = "1964.1.1.12"
 			id = -1
