@@ -8,10 +8,16 @@
 
   #Events
   danzigevents.1: "The Danzig Question"
+  danzigevents.1.title: "The Danzig Question"
   danzigevents.1.desc: "The city of Danzig has been a point of contention between [GER.GetName] and [POL.GetName]. With the rise of [POL.GetAdjective] sentiment in the city, we must decide how to handle this situation."
   danzigevents.1.a: "We must join [GER.GetName]. We're a [GER.GetAdjective] city after all."
   danzigevents.1.b: "We must join [POL.GetName]. We were once part of [POL.GetName], and we must return to our roots."
   danzigevents.1.c: "We must grant Danzig independence and chart our own course. We are a city-state, and we must act like one."
 
   #Ideas
-  
+  Danzig_polish: "Polish Gdansk"
+  Danzig_polish_desc: "Danzig was once a proud city of [POL.GetName], and we must honor our heritage by aligning with them."
+  Danzig_german: "German Danzig"
+  Danzig_german_desc: "Danzig has always been a part of [GER.GetName], and we must honor our heritage by aligning with them."
+  Danzig_independent: "Independent Danzig"
+  Danzig_independent_desc: "Danzig is a city-state, and we must chart our own course. We will not be beholden to any nation."

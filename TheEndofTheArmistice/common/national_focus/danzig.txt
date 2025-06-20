@@ -31,7 +31,6 @@ focus_tree = {
 
 	focus = {
 		id = DNZ_fate_of_Danzig
-		icon = GFX_goal_generic_political_reform
 		x = 0
 		y = 0
 		cost = 5

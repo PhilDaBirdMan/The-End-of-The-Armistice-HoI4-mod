@@ -4,21 +4,21 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.05
 				stability_weekly = 0.005
-				democratic_drift = 0.001
+				democratic_drift = 0.01
 			}
 		}
 		Danzig_german = {
 			modifier = {
 				political_power_gain = 0.05
 				war_support_factor = 0.005
-				fascism_drift = 0.001
+				fascism_drift = 0.01
 			}
 		}
 		Danzig_independent = {
 			modifier = {
 				political_power_gain = 0.075
 				stability_weekly = 0.0075
-				neutrality_drift = 0.001
+				neutrality_drift = 0.01
 			}
 		}
 	}
