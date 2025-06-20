@@ -10,4 +10,8 @@ focus_tree = {
 
 
 		focus = {
-			id = TIB_Dalai_Lama
+			id = TIB_buddhism_one
+			cost = 5
+			completion_reward = {}
+		}
+	}
