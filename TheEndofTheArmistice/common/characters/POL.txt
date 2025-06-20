@@ -1715,7 +1715,7 @@ characters = {
 
 	POL_adrian_kuharski = {
 		name = "Adrian Kuharski"
-		portrait_path = "gfx/interface/ideas/POL_adrian_kuharski.dds"
+		portrait_path = "GFX_POL_adrian_kuharski"
 
 		advisor = {
 			slot = political_advisor
