@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=despotism
+			ideology = absolute_monarchism
 			traits = { the_last_romanov_maybe }
 			expire="1965.1.1.1"
 			id=-1
@@ -22,7 +22,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=despotism
+			ideology = absolute_monarchism
 			traits = { patriot_king }
 			expire="1965.1.1.1"
 			id=-1
@@ -37,7 +37,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=despotism
+			ideology = absolute_monarchism
 			expire="1965.1.1.1"
 			id=-1
 			traits = { royal_legitimist }
@@ -52,7 +52,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=despotism
+			ideology = regency
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -1712,4 +1712,23 @@ characters = {
 			}
 		}
 	}
+
+	POL_adrian_kuharski={
+		name=POL_jan_kowalewski
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1" #No Portrait
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POL_jan_kowalewski
+		
+			allowed = {
+				original_tag = POL
+				has_dlc = "La Resistance"
+			}
+			traits = {
+				homophobic_conservative 
+			}
 }
