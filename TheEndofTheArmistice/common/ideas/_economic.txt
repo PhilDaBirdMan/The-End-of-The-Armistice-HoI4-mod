@@ -1379,5 +1379,32 @@ ideas = {
 			cancel_if_invalid = no
 
 		}
+
+		Eurozone = {
+			available = {
+				always = no
+			}
+			visible = {
+				has_completed_focus = EUROPE_Euro
+			}
+			available = {
+
+			}
+			picture = RAJ_special_economic_zones
+			cost = 0
+			removal_cost = -1
+
+			research_bonus = {
+				industry = 0.15
+			}
+
+			modifier = {
+				civilian_intel_to_others = 60
+				navy_intel_to_others = 30.0
+			}
+
+			cancel_if_invalid = no
+
+		}
 	}
 }
