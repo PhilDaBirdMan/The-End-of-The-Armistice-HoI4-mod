@@ -1,1 +1,84 @@
-joint_focus = {}
+joint_focus = {
+	id = EUROPE_Begin
+	icon = GFX_focus_EU
+
+	x = 0
+	y = 0
+
+	offset = {
+		x = 20
+		y = 0
+		trigger = {
+			tag = LUX
+		}
+	}
+
+	offset = {
+		y = 0
+		x = 20
+		trigger = {
+			tag = BEL
+		}
+	}
+
+	offset = {
+        x = 20
+        y = 0
+        trigger = {
+        	tag = HOL
+        }
+    }
+
+
+	cost = 5
+
+	available = {
+		has_country_flag = democratic_and_stable
+		NOT = {
+			at_war = yes
+		}
+	}
+
+    cancel_if_invalid = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+
+	completion_reward_joint_member = {
+		add_political_power = 50
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+	completion_reward_joint_originator = {
+		add_political_power = 25
+		add_stability = 0.025
+		create_faction = "European Union"
+		add_to_faction = LUX
+		add_to_faction = BEL
+		add_to_faction = HOL
+	}
+	
+}
+
+
+joint_focus = {
+	id = EUROPE_Euro
+	icon = GFX_focus_generic_Euro
+	relative_position_id = EUROPE_Begin
+	x = 0
+	y = 1
+	cost = 35
+	prerequisite = {	focus = Europe_Begin }
+	completion_reward_member = {
+		add_idea = Eurozone
+	}
+	}
+
+}
