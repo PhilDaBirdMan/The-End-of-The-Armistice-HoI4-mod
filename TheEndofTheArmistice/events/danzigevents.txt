@@ -15,6 +15,13 @@ country_event = {
 	option = {
 		name = danzigevents.1.b
 		add_ideas = Danzig_polish
+		set_country_name = "Polish Gdansk"
+		set_country_adjective = "Gdanskian"
+		set_politics = {
+    ruling_party = democratic
+    elections_allowed = yes
+    election_frequency = 48
+}
 	}
 
 	option = {
