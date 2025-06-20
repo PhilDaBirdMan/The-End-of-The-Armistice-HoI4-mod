@@ -1,1 +1,13 @@
-Tibet
+focus_tree = {
+    id = TIB_focus_tree
+    country = {
+        base = 0
+        modifier = {
+            add = 25
+            tag = TIB
+        }
+    }
+
+
+		focus = {
+			id = TIB_Dalai_Lama
