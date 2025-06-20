@@ -1,7 +1,9 @@
-﻿l_english:
+l_english:
   
   the_end_in_sight:0 "The End in Sight"
   the_end_in_sight_desc:0 "The 20-year armistice Ferdinand Foch predicted in 1919 is coming to a close. With Hitler's expansionist ideals, Stalin's purges, Mussolini's war in Ethiopia, and Hirohito's imperial ambitions, the world is poised for another major war."
+  GER_the_end_in_sight_desc:0 "Since Hitler's rise to power in 1933, many have asked themselves what Germany's future will look like. Hitler envisions a Greater German state encompassing land from the Atlantic to the Volga. Others disagree and would like to dispose of Hitler."
   LUX_the_end_in_sight_desc:0 "Luxembourg is a small nation, but it has a large role in the world. With its strategic location between France and Germany, it has been a battleground for centuries. The end of the armistice means that the coal fields of Luxembourg must prepare for the possibility of war once again."
   PAN_the_end_in_sight_desc:0 "Panama is the site of the Panama Canal, operational since 1914. In the 21 years since, it's become the cornerstone of the Panamanian economy, as well as the American economy, due to their control of the Canal Zone. With dissent against and support for the Americans, Panama is stuck in a battle with itself."
   DNZ_the_end_in_sight_desc:0 "The Free City of Danzig is a small city-state. Formed as part of the Treaty of Versailles, it was meant to be a neutral zone between Germany and Poland. However, with Hitler's expansionist ideals, and the Polish desire to retain control of the city, Danzig is caught in the middle of a brewing conflict."
+  
