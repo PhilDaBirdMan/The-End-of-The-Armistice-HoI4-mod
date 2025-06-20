@@ -1,0 +1,18 @@
+add_namespace = danzigevents
+
+country_event = {
+	id = danzigevents.1
+	title = danzigevents.1.t
+	desc = danzigevents.1.desc
+	
+	is_triggered_only = yes
+	option = {
+		name = danzigevents.1.a
+		
+	}
+	
+	option = {
+		name = danzigevents.1.b
+		
+	}
+}

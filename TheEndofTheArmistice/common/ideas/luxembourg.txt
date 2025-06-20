@@ -1,0 +1,70 @@
+ideas = {
+    #national spirits
+    country = {
+        Elections_of_1937 = {
+            picture = neutrality_idea
+			modifier = {
+    political_power_cost = 0.5
+    stability_factor = -0.05
+            }
+            rule = {
+                can_not_declare_war = yes
+                can_join_factions = no
+                can_send_volunteers = no
+            }
+            cancel = {
+    has_completed_focus = LUX_Secure_New_State
+}
+
+        }
+
+    }
+}
+    
+
+ideas = {
+    #industrial concerns
+	industrial_concern = { 
+		LUX_arbed = {
+			picture = generic_industrial_concern_2
+			allowed = {
+				original_tag = LUX
+			}			
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				local_resources_factor = 0.15
+			}
+			ai_will_do = {
+				base = 1
+			}			
+			traits = { industrial_steel_mills_trait }
+		}
+
+        LUX_GL = {
+			
+			picture = idea_generic_railroads
+
+			allowed = {
+				original_tag = LUX
+			}
+			
+			research_bonus = {
+				train_tech = 0.05
+			}
+
+			modifier = {
+				rail_way_max_level_terrain_limit = 0.15
+                railway_gun_bombardment_factor = 0.33
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+			
+			traits = { railway_company }
+		}
+	}
+
+}

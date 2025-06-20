@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		Danzig_polish = {
+			modifier = {
+				political_power_gain = 0.05
+				stability_weekly = 0.005
+				democratic_drift = 0.001
+			}
+		}
+		Danzig_german = {
+			modifier = {
+				political_power_gain = 0.05
+				war_support_factor = 0.005
+				fascism_drift = 0.001
+			}
+
+		}
+	}
+}
