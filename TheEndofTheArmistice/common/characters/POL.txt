@@ -1713,22 +1713,16 @@ characters = {
 		}
 	}
 
-	POL_adrian_kuharski={
-		name=POL_jan_kowalewski
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1" #No Portrait
-			}
-		}
-		advisor={
+	POL_adrian_kuharski = {
+		name = "Adrian Kuharski"
+		portrait_path = "gfx/interface/ideas/POL_adrian_kuharski.dds"
+
+		advisor = {
 			slot = political_advisor
-			idea_token = POL_jan_kowalewski
-		
-			allowed = {
-				original_tag = POL
-				has_dlc = "La Resistance"
-			}
-			traits = {
-				homophobic_conservative 
-			}
+			idea_token = POL_adrian_kuharski_advisor
+			cost = 150
+			allowed = { original_tag = POL }
+			available = { has_country_leader = yes }
+		}
+	}
 }
