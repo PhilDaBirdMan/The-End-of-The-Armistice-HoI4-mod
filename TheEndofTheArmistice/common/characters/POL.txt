@@ -1715,14 +1715,22 @@ characters = {
 
 	POL_adrian_kuharski = {
 		name = "Adrian Kuharski"
-		portrait_path = "GFX_POL_adrian_kuharski"
+		portraits = {
+    		civilian = { 
+				small = "GFX_POL_adrian_kuharski"
+			}
+		}
 
 		advisor = {
 			slot = political_advisor
+			gender = male
 			idea_token = POL_adrian_kuharski_advisor
 			cost = 150
 			allowed = { original_tag = POL }
-			available = { has_country_leader = yes }
+			traits = {
+				conservative_nationalist
+				father_of_polish_nationalism
+			}
 		}
 	}
 }
