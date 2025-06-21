@@ -1717,7 +1717,7 @@ characters = {
 		name = "Adrian Kuharski"
 		portraits = {
     		civilian = { 
-				small = GFX_POL_adrian_kuharski
+				small = "GFX_idea_POL_adrian_kuharski"
 			}
 		}
 
