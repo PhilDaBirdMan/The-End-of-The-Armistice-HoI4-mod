@@ -15,6 +15,9 @@ ideologies = {
 
 			populism = {
 			}
+
+			feminism = {
+			can_be_randomly_selected = no
 		}
 
 		dynamic_faction_names = {
@@ -206,6 +209,9 @@ ideologies = {
 			}
 
 			rexism = {
+			}
+
+			extreme_conservatism = {
 			}
 		}
 
