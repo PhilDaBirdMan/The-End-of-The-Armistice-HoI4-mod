@@ -1,9 +1,6 @@
 spriteTypes = {
     spriteType = {
         name = "GFX_idea_POL_adrian_kuharski"
-        texturefile = gfx/interface/ideas/adrian_kuharski.dds
-        noOfFrames = 1
-        effectFile = "gfx/FX/buttonstate.lua"
-        legacy_lazy_load = no
+        texturefile = gfx/interface/ideas/POL_adrian_kuharski.dds
     }
 }
