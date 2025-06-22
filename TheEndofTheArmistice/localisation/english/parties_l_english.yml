@@ -4,7 +4,7 @@ l_english:
  democratic:0 "Democratic"
  democratic_noun:0 "Democracy"
  monarchism:0 "Monarchist"
- monarchism_noun: "Monarchy"
+ monarchism_noun:0 "Monarchy"
  fascism:0 "Fascist"
  fascism_noun:0 "Fascism"
  fascism_desc:0 "Totalitarian Regime"
