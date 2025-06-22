@@ -149,7 +149,7 @@ search_filters = {
 				}
         cost = 5
         prerequisite = { focus = LUX_Election_of_1937 }
-        mutually_exclusive = { focus = LUX_The_Right focus = LUX_The_left focus = LUX_The_Center }
+        mutually_exclusive = { focus = LUX_The_Right focus = LUX_The_Left focus = LUX_The_Center }
         relative_position_id = LUX_Election_of_1937
         x = 6
         y = 1
@@ -161,6 +161,27 @@ search_filters = {
             }
         }
     }
+
+	focus = {
+		id = LUX_Socialist_Way
+		cost = 10
+		relative_position_id = LUX_The_Left
+		x = 2
+		y = 1
+		completion_reward = {
+			add_idea = LUX_socialism_idea_1
+		}
+	}
+
+
+	focus = {
+		id = LUX_down_with_monarchy
+		cost = 10
+		relative_position_id = LUX_The_Left
+		x = -2
+		y = 1
+		completion_reward = {}
+	}
 
 # Military Branch
     focus = {
