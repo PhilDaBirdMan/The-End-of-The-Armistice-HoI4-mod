@@ -2,161 +2,137 @@ add_namespace = LUXelection
 
 
 
+add_namespace = LUXelection
+
+### MAIN ELECTION EVENT ###
 country_event = {
     id = LUXelection.1
     title = LUXelection.1.t
     desc = LUXelection.1.desc
-
     is_triggered_only = yes
     fire_only_once = yes
-trigger = {}
 
     option = {
-            name = LUXelection.1.a
-country_event = {
-    id = LUXelection.2
-    days = 5
-}
-        }
-        option = {
-            name = LUXelection.1.b
-            country_event = {
-    id = LUXelection.4
-    days = 5
-        }
+        name = LUXelection.1.a  # Left
+        trigger = {}
+        ai_chance = { factor = 25 }
+        trigger_event = { id = LUXelection.2 days = 5 }
     }
-        option = {
-            name = LUXelection.1.c
-            country_event = {
-    id = LUXelection.3
-    days = 5
-        }
     option = {
-            name = LUXelection.1.d
-        }
+        name = LUXelection.1.b  # Center
+        ai_chance = { factor = 25 }
+        trigger_event = { id = LUXelection.4 days = 5 }
+    }
+    option = {
+        name = LUXelection.1.c  # Right
+        ai_chance = { factor = 25 }
+        trigger_event = { id = LUXelection.3 days = 5 }
+    }
+    option = {
+        name = LUXelection.1.d  # No change
+        ai_chance = { factor = 25 }
+        # Optionally add a national spirit or modifier
     }
 }
 
+### LEFT-LEANING OUTCOMES ###
 country_event = {
     id = LUXelection.2
     title = LUXelection.2.t
     desc = LUXelection.2.desc
-
     is_triggered_only = yes
     fire_only_once = yes
-trigger = {}
 
     option = {
-            name = LUXelection.2.a
-set_party_name = {
-    ideology = communism
-    long_name = LUX_agrarians_long
-    name = LUX_agrarians
-}
-        }
-        option = {
-            name = LUXelection.2.b
-set_party_name = {
-    ideology = communism
-    long_name = LUX_communism_party_long
-    name = LUX_communism_party
-}
-
-
-        }
-        option = {
-            name = LUXelection.2.c
-set_party_name = {
-    ideology = democracy
-    long_name = LUX_socialists_long
-    name = LUX_socialists
-}
+        name = LUXelection.2.a
+        set_party_name = {
+            ideology = communism
+            long_name = LUX_agrarians_long
+            name = LUX_agrarians
         }
     }
+    option = {
+        name = LUXelection.2.b
+        set_party_name = {
+            ideology = communism
+            long_name = LUX_communism_party_long
+            name = LUX_communism_party
+        }
+    }
+    option = {
+        name = LUXelection.2.c
+        set_party_name = {
+            ideology = democracy
+            long_name = LUX_socialists_long
+            name = LUX_socialists
+        }
+    }
+}
 
-
+### RIGHT-LEANING OUTCOMES ###
 country_event = {
     id = LUXelection.3
     title = LUXelection.3.t
     desc = LUXelection.3.desc
-
     is_triggered_only = yes
     fire_only_once = yes
-trigger = {}
 
     option = {
-            name = LUXelection.3.a
-set_party_name = {
-    ideology = fascism
-    long_name = LUX_fascism_party_long
-    name = LUX_fascism_party
-}
-        }
-        option = {
-            name = LUXelection.2.b
-set_party_name = {
-    ideology = fascism
-    long_name = LUX_NSDAP_long
-    name = LUX_NSDAP
-}
-
-
-        }
-        option = {
-            name = LUXelection.2.c
-set_party_name = {
-    ideology = neutrality
-    long_name = LUX_neutrality_party
-    name = LUX_neutrality_party
-}
+        name = LUXelection.3.a
+        set_party_name = {
+            ideology = fascism
+            long_name = LUX_fascism_party_long
+            name = LUX_fascism_party
         }
     }
+    option = {
+        name = LUXelection.3.b
+        set_party_name = {
+            ideology = fascism
+            long_name = LUX_NSDAP_long
+            name = LUX_NSDAP
+        }
+    }
+    option = {
+        name = LUXelection.3.c
+        set_party_name = {
+            ideology = neutrality
+            long_name = LUX_neutrality_party
+            name = LUX_neutrality_party
+        }
+    }
+}
 
-
+### CENTER-LEANING OUTCOMES ###
 country_event = {
     id = LUXelection.4
     title = LUXelection.4.t
     desc = LUXelection.4.desc
-
     is_triggered_only = yes
     fire_only_once = yes
-trigger = {}
 
     option = {
-            name = LUXelection.4.a
-set_party_name = {
-    ideology = democracy
-    long_name = LUX_de
-    name = LUX_fascism_party
-}
-        }
-        option = {
-            name = LUXelection.2.b
-set_party_name = {
-    ideology = fascism
-    long_name = LUX_NSDAP_long
-    name = LUX_NSDAP
-}
-
-
-        }
-        option = {
-            name = LUXelection.2.c
-set_party_name = {
-    ideology = neutrality
-    long_name = LUX_neutrality_party
-    name = LUX_neutrality_party
-}
+        name = LUXelection.4.a
+        set_party_name = {
+            ideology = democracy
+            long_name = LUX_democratic_party_long
+            name = LUX_democratic_party
         }
     }
-
-
-
-
-
-
-
-
-
-
-
+    option = {
+        name = LUXelection.4.b
+        set_party_name = {
+            ideology = democracy 
+            long_name = LUX_tbd_long
+            name = LUX_tbd
+        }
+    }
+    option = {
+        name = LUXelection.4.c
+        set_party_name = {
+            ideology = neutrality
+            long_name = LUX_neutrality_party
+            name = LUX_neutrality_party
+        }
+    }
+}
