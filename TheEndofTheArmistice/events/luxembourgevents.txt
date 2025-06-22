@@ -96,9 +96,9 @@ country_event = {
     option = {
         name = LUXelection.3.c
         set_party_name = {
-            ideology = neutrality
-            long_name = LUX_neutrality_party
-            name = LUX_neutrality_party
+            ideology = monarchism
+            long_name = LUX_monarchism_long
+            name = LUX_monarchism
         }
     }
 }
