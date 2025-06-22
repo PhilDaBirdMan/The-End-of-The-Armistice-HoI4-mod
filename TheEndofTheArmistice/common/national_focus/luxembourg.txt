@@ -162,33 +162,6 @@ search_filters = {
         }
     }
 
-     focus = {
-        id = LUX_Secure_New_State
-        icon = GFX_focus_generic_national_security
-        cost = 1
-        prerequisite = {}
-        relative_position_id = LUX_Election_of_1937
-        x = 0
-        y = 3
-        completion_reward = { }
-    }
-
-    focus = {
-        id = LUX_welfare
-        icon = GFX_focus_SWE_hygienic_housing
-search_filters = {
-					FOCUS_FILTER_POLITICAL_CHARACTER
-				}
-        cost = 10
-        prerequisite = {focus = LUX_Secure_New_State}
-        relative_position_id = LUX_Election_of_1937
-        x = -1
-        y = 4
-        completion_reward = {
-
-        }
-    }
-
 # Military Branch
     focus = {
         id = LUX_Raise_the_Armed_Forces
