@@ -35,7 +35,7 @@ ideologies = {
 		color = { 0 0 255 }
 
 		rules = {
-			can_create_collaboration_government = no
+			can_create_collaboration_government = yes
 			can_declare_war_on_same_ideology = no
 			can_force_government = yes
 			can_send_volunteers = no
@@ -159,7 +159,7 @@ ideologies = {
 			}
 
 			anti_colonialism = {
-			can_be_randomy_selected = no
+			can_be_randomly_selected = no
 			}
 		}
 
