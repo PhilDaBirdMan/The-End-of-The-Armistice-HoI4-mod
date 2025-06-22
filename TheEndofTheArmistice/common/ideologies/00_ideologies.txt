@@ -152,6 +152,12 @@ ideologies = {
 			anarchist_communism = {
 			}
 
+			agrarianism = {
+			}
+
+			syndicalism = {
+			}
+
 			anti_colonialism = {
 			can_be_randomy_selected = no
 			}
