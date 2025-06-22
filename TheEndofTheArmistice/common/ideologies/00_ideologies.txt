@@ -148,6 +148,10 @@ ideologies = {
 
 			anarchist_communism = {
 			}
+
+			anti_colonialism = {
+			can_be_randomy_selected = no
+			}
 		}
 
 		dynamic_faction_names = {
