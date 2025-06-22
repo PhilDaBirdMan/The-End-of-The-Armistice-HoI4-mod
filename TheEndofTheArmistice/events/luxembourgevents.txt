@@ -1,9 +1,5 @@
 add_namespace = LUXelection
 
-
-
-add_namespace = LUXelection
-
 ### MAIN ELECTION EVENT ###
 country_event = {
     id = LUXelection.1
@@ -30,6 +26,11 @@ country_event = {
     }
     option = {
         name = LUXelection.1.d  # No change
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+					election_frequency = 48
+				}
         ai_chance = { factor = 25 }
         # Optionally add a national spirit or modifier
     }
@@ -50,14 +51,19 @@ country_event = {
             long_name = LUX_agrarians_long
             name = LUX_agrarians
         }
+				set_politics = {
+					ruling_party = communism 
+					elections_allowed = no
+					government = agrarianism
+				}
     }
     option = {
         name = LUXelection.2.b
-        set_party_name = {
-            ideology = communism
-            long_name = LUX_communism_party_long
-            name = LUX_communism_party
-        }
+        set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					government = marxism 
+				}
     }
     option = {
         name = LUXelection.2.c
@@ -66,6 +72,12 @@ country_event = {
             long_name = LUX_socialists_long
             name = LUX_socialists
         }
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+					election_frequency = 48
+					government = socialism
+				}
     }
 }
 
@@ -84,6 +96,10 @@ country_event = {
             long_name = LUX_fascism_party_long
             name = LUX_fascism_party
         }
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
     }
     option = {
         name = LUXelection.3.b
@@ -92,7 +108,13 @@ country_event = {
             long_name = LUX_NSDAP_long
             name = LUX_NSDAP
         }
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+					government = nazism
+				}
     }
+
     option = {
         name = LUXelection.3.c
         set_party_name = {
@@ -118,7 +140,14 @@ country_event = {
             long_name = LUX_democratic_party_long
             name = LUX_democratic_party
         }
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+					election_frequency = 48
+				}
     }
+
+
     option = {
         name = LUXelection.4.b
         set_party_name = {
@@ -126,7 +155,14 @@ country_event = {
             long_name = LUX_tbd_long
             name = LUX_tbd
         }
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+					election_frequency = 48
+				}
     }
+
+
     option = {
         name = LUXelection.4.c
         set_party_name = {
@@ -134,5 +170,10 @@ country_event = {
             long_name = LUX_neutrality_party
             name = LUX_neutrality_party
         }
+					set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					government = centrism
+				}
     }
 }
