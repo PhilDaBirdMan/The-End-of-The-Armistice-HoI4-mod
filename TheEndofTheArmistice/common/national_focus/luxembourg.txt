@@ -183,6 +183,79 @@ search_filters = {
 		completion_reward = {}
 	}
 
+	focus = {
+    id = LUX_Proletarian_Revolution
+    icon = GFX_focus_SOV_propaganda
+    prerequisite = { focus = LUX_Dismantle_the_Monarchy }
+    x = -4
+    y = 5
+    cost = 10
+    search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_WAR_SUPPORT }
+
+    completion_reward = {
+        set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+        }
+        add_popularity = {
+            ideology = communism
+            popularity = 0.2
+        }
+        add_ideas = LUX_revolutionary_zeal
+        set_country_flag = LUX_revolution_completed
+    }
+}
+
+focus = {
+    id = LUX_Join_the_Comintern
+    icon = GFX_goal_tripartite_pact
+    prerequisite = { focus = LUX_Proletarian_Revolution }
+    x = -4
+    y = 6
+    cost = 10
+    search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNATIONAL_TRADE }
+
+    available = {
+        is_in_faction = no
+        any_other_country = {
+            tag = SOV
+            has_government = communism
+        }
+    }
+
+    completion_reward = {
+        create_faction = "COMMUNIST_LUXEMBOURG"
+        add_to_faction = SOV
+        add_opinion_modifier = {
+            target = SOV
+            modifier = join_comintern_good
+        }
+    }
+}
+
+focus = {
+    id = LUX_Export_the_Revolution
+    icon = GFX_goal_generic_propaganda
+    prerequisite = { focus = LUX_Join_the_Comintern }
+    x = -4
+    y = 7
+    cost = 10
+    search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT }
+
+    completion_reward = {
+        add_named_threat = { threat = 5 name = LUX_ExportRevolution_threat }
+        add_ideas = LUX_revolutionary_agitation
+        add_war_goal = {
+            type = puppet_wargoal_focus
+            target = BEL
+        }
+        add_war_goal = {
+            type = puppet_wargoal_focus
+            target = HOL
+        }
+    }
+}
+
 # Military Branch
     focus = {
         id = LUX_Raise_the_Armed_Forces
