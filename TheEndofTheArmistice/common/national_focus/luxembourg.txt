@@ -175,12 +175,15 @@ search_filters = {
 
 
 	focus = {
-		id = LUX_down_with_monarchy
+		id = LUX_Dismantle_the_Monarchy
 		cost = 10
 		relative_position_id = LUX_The_Left
 		x = -2
 		y = 1
-		completion_reward = {}
+		completion_reward = {
+			add_war_support = 0.15
+			
+		}
 	}
 
 	focus = {
@@ -224,12 +227,7 @@ focus = {
     }
 
     completion_reward = {
-        create_faction = "COMMUNIST_LUXEMBOURG"
-        add_to_faction = SOV
-        add_opinion_modifier = {
-            target = SOV
-            modifier = join_comintern_good
-        }
+        SOV = { add_to_faction = ROOT }
     }
 }
 
