@@ -182,7 +182,10 @@ search_filters = {
 		y = 1
 		completion_reward = {
 			add_war_support = 0.15
-			
+			add_popularity = {
+				ideology = monarchism
+				popularity = -0.1
+			}
 		}
 	}
 
@@ -190,16 +193,12 @@ search_filters = {
     id = LUX_Proletarian_Revolution
     icon = GFX_focus_SOV_propaganda
     prerequisite = { focus = LUX_Dismantle_the_Monarchy }
-    x = -4
-    y = 5
+		relative_position_id = LUX_Dismantle_the_Monarchy
+    x = 0
+    y = 1
     cost = 10
     search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_WAR_SUPPORT }
 
-    completion_reward = {
-        set_politics = {
-            ruling_party = communism
-            elections_allowed = no
-        }
         add_popularity = {
             ideology = communism
             popularity = 0.2
@@ -220,8 +219,7 @@ focus = {
 
     available = {
         is_in_faction = no
-        any_other_country = {
-            tag = SOV
+        SOV = {
             has_government = communism
         }
     }
