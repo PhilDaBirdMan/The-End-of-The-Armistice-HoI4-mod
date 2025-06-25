@@ -126,6 +126,13 @@ characters = {
 		}
 	}
 
+
+	LUX_pierre_krier = {}
+
+	LUX_pierre_prum = {}
+
+	LUX_nicolas_mathieu = {}
+
 	LUX_damien_roeser={
 		advisor={
 			
