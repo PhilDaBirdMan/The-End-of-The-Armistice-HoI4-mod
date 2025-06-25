@@ -18,6 +18,32 @@ ideas = {
 
         }
 
+				LUX_republican_militia = {
+			    icon = GFX_generic_militia
+			    allowed = { original_tag = LUX }
+			    modifier = {
+		        army_experience_gain = 0.05
+		        recruitable_population_factor = 0.02
+	    }
+	}
+
+			LUX_revolutionary_zeal = {
+    icon = GFX_goal_generic_revolution
+    allowed = { original_tag = LUX }
+    modifier = {
+        war_support = 0.1
+        justify_war_goal_time = -0.15
+    }
+}
+
+LUX_revolutionary_agitation = {
+    icon = GFX_goal_generic_political_agitation
+    allowed = { original_tag = LUX }
+    modifier = {
+        subversive_activities_cost = -0.25
+        ideology_drift_defense = -0.1
+    }
+}
     }
 }
     
