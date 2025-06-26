@@ -166,7 +166,7 @@ country_event = {
         name = LUXelection.4.c
         set_party_name = {
             ideology = neutrality
-            long_name = LUX_dl_long
+            long_name = LUX_dl
             name = LUX_dl
         }
 					set_politics = {
