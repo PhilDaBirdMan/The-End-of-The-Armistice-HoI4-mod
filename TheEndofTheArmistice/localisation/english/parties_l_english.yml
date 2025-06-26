@@ -665,6 +665,9 @@ l_english:
  LUX_socialists_long: "Letzebuerger Sozialistesch Aarbechterpartei"
  LUX_socialists: "LSAP"
  LUX_dl: "Democratic List"
+ LUX_PIE_long: "Party of Independents of the East"
+ LUX_PIE: "PIE"
+ LUX_liberals: "Liberal Party"
 
  BHU_neutrality_party:0 "Wangchuk Dynasty"
  SLO_fascism_party:0 "HSLS"
