@@ -252,6 +252,18 @@ focus = {
     }
 }
 
+	focus = {
+		id = LUX_three_more years
+		cost = 10
+	}
+
+	focus = {
+		id = LUX_muzzle_law
+		cost = 10
+		prerequisite = {focus = LUX_three_more_years }
+		completion_reward = {}
+	}
+
 # Military Branch
     focus = {
         id = LUX_Raise_the_Armed_Forces
