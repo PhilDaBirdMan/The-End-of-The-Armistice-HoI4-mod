@@ -104,14 +104,13 @@ country_event = {
     option = {
         name = LUXelection.3.b
         set_party_name = {
-            ideology = fascism
-            long_name = LUX_NSDAP_long
-            name = LUX_NSDAP
+            ideology = neutrality
+            long_name = LUX_PIE_long
+            name = LUX_PIE
         }
 				set_politics = {
-					ruling_party = fascism
+					ruling_party = neutrality
 					elections_allowed = no
-					government = nazism
 				}
     }
 
@@ -152,8 +151,8 @@ country_event = {
         name = LUXelection.4.b
         set_party_name = {
             ideology = democracy 
-            long_name = LUX_tbd_long
-            name = LUX_tbd
+            long_name = LUX_liberals_long
+            name = LUX_liberals
         }
 				set_politics = {
 					ruling_party = democratic
@@ -167,8 +166,8 @@ country_event = {
         name = LUXelection.4.c
         set_party_name = {
             ideology = neutrality
-            long_name = LUX_neutrality_party
-            name = LUX_neutrality_party
+            long_name = LUX_dl_long
+            name = LUX_dl
         }
 					set_politics = {
 					ruling_party = neutrality
