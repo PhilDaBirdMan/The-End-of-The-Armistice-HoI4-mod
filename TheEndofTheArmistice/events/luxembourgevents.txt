@@ -54,7 +54,7 @@ country_event = {
 				set_politics = {
 					ruling_party = communism 
 					elections_allowed = no
-					government = agrarianism
+					ideology = agrarianism
 				}
     }
     option = {
@@ -62,7 +62,7 @@ country_event = {
         set_politics = {
 					ruling_party = communism
 					elections_allowed = no
-					government = marxism 
+					ideology = marxism 
 				}
     }
     option = {
@@ -76,7 +76,7 @@ country_event = {
 					ruling_party = democratic
 					elections_allowed = yes
 					election_frequency = 48
-					government = socialism
+					ideology = socialism
 				}
     }
 }
@@ -122,7 +122,7 @@ country_event = {
             name = LUX_monarchism
         }
 				set_politics = {
-			    ruling_party = neutrality
+			    ruling_party = monarchism
 			    elections_allowed = no
 				}
     }
@@ -176,7 +176,7 @@ country_event = {
 					set_politics = {
 					ruling_party = neutrality
 					elections_allowed = no
-					government = centrism
+					ideology = centrism
 				}
     }
 }
