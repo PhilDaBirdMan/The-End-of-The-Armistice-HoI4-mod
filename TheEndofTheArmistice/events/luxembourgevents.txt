@@ -121,6 +121,10 @@ country_event = {
             long_name = LUX_monarchism_long
             name = LUX_monarchism
         }
+				set_politics = {
+			    ruling_party = neutrality
+			    elections_allowed = no
+				}
     }
 }
 
