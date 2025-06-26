@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
  # Focuses
  LUX_focus_tree: "[LUX.GetName] Focus Tree"
@@ -18,6 +18,8 @@
  LUX_The_Right_desc: "Backing the Right, with the fascists, may be the new path for [LUX.GetName]."
  LUX_no_politics: "No Bias"
  LUX_no_politics_desc: "We will not fund any party. They are all corrupt and not worth our time or money. We will focus on the economy and military instead, and let the election run its course."
+ LUX_muzzle_law: "Maulkuerfgesetz"
+ LUX_muzzle_law_desc: "The Maulkuerfgesetz, or Muzzle Law, is a law the [LUX.GetRulingParty] would like to pass to break down opposition movements. These movements will break [LUX.GetName] from the inside and must be stopped."
  
  
  #Ideas
