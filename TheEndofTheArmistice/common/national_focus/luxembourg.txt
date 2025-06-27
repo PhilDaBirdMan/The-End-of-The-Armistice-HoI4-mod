@@ -57,6 +57,29 @@ focus_tree = {
 
     }
 
+	focus = {
+        id = LUX_rebuild_steel
+        prerequisite = { focus = LUX_Military_Industry }
+        icon = GFX_goal_generic_construct_civ_factory
+				relative_position_id = LUX_Military_Industry
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_resource = {
+                type = steel
+                amount = 10
+            }
+						8 = {
+	            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+							}
+            }
+        }
+    }
+
     focus = {
         id = LUX_Election_of_1937
         icon = GFX_focus_generic_election
