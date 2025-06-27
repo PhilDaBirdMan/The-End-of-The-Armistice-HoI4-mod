@@ -80,6 +80,19 @@ focus_tree = {
         }
     }
 
+focus = {
+        id = LUX_modernize_universities
+				prerequisite = {focus = LUX_rebuild_steel}
+        icon = GFX_goal_generic_scientific_exchange
+				relative_position_id = LUX_rebuild_steel
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_research_slot = 1
+        }
+    } 
+
     focus = {
         id = LUX_Election_of_1937
         icon = GFX_focus_generic_election
@@ -320,5 +333,7 @@ focus = {
    }
 
    joint_focus = BNL_Benelux_group
+
+	
 }
 
