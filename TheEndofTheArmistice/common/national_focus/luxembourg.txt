@@ -66,16 +66,17 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-            add_resource = {
-                type = steel
-                amount = 10
-            }
+            
 						8 = {
 	            add_building_construction = {
                 type = industrial_complex
                 level = 1
                 instant_build = yes
 							}
+                            add_resource = {
+                type = steel
+                amount = 10
+            }
             }
         }
     }
@@ -202,6 +203,8 @@ search_filters = {
 		id = LUX_Socialist_Way
 		cost = 10
 		relative_position_id = LUX_The_Left
+        prerequisite = { focus = LUX_The_Left }
+        mutually_exclusive = { focus = LUX_Dismantle_the_Monarchy }
 		x = 2
 		y = 1
 		completion_reward = {
@@ -214,6 +217,8 @@ search_filters = {
 		id = LUX_Dismantle_the_Monarchy
 		cost = 10
 		relative_position_id = LUX_The_Left
+        prerequisite = { focus = LUX_The_Left }
+        mutually_exclusive = { focus = LUX_Socialist_Way }
 		x = -2
 		y = 1
 		completion_reward = {
