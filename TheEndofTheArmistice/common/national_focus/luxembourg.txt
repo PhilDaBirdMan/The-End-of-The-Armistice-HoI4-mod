@@ -254,8 +254,9 @@ focus = {
     id = LUX_Join_the_Comintern
     icon = GFX_goal_tripartite_pact
     prerequisite = { focus = LUX_Proletarian_Revolution }
-    x = -4
-    y = 6
+    relative_position_id = LUX_Proletarian_Revolution
+    x = 1
+    y = 0
     cost = 10
     search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNATIONAL_TRADE }
 
@@ -275,8 +276,9 @@ focus = {
     id = LUX_Export_the_Revolution
     icon = GFX_goal_generic_propaganda
     prerequisite = { focus = LUX_Join_the_Comintern }
-    x = -4
-    y = 7
+    relative_position_id = LUX_Join_the_Comintern
+    x = 0
+    y = 1
     cost = 10
     search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT }
 
@@ -307,6 +309,9 @@ focus = {
 		id = LUX_muzzle_law
 		cost = 10
 		prerequisite = {focus = LUX_three_more_years }
+        relative_position_id = LUX_three_more_years
+        x = 0
+        y = 1
 		completion_reward = {}
 	}
 
@@ -316,7 +321,7 @@ focus = {
         icon = GFX_goal_generic_army_doctrines
         cost = 10
         x = 10
-        y = 2
+        y = 0
         search_filters = {
             FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_SWI_MILITARY_READINESS
         }
