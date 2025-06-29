@@ -153,9 +153,9 @@ search_filters = {
         y = 1
         completion_reward = {
             add_popularity = {
-    ideology = fascism
-    popularity = 0.15
-}
+                ideology = fascism
+                popularity = 0.15
+            }
         }
     }
 
@@ -178,6 +178,7 @@ search_filters = {
 }
         }
     }
+
     focus = {
         id = LUX_no_politics
         icon = GFX_goal_generic_neutrality_focus
@@ -239,15 +240,15 @@ search_filters = {
     y = 1
     cost = 10
     search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_WAR_SUPPORT }
-
+    completion_reward = {
         add_popularity = {
             ideology = communism
             popularity = 0.2
         }
         add_ideas = LUX_revolutionary_zeal
         set_country_flag = LUX_revolution_completed
+        }
     }
-}
 
 focus = {
     id = LUX_Join_the_Comintern
