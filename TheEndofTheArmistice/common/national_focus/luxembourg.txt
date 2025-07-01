@@ -34,7 +34,7 @@ focus_tree = {
 				search_filters = {
 					FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT
 				}
-        x = 10
+        x = 16
         y = 0
         cost = 10
         completion_reward = {
