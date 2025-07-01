@@ -525,7 +525,7 @@ continuous_focus_palette = {
 	focus = {
 		id = continuous_boost_influence
 		
-		icon = GFX_goal_continuous_boost_influence
+		icon = GFX_goal_placeholder
 		
 		available = {			
 		}
