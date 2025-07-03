@@ -341,6 +341,14 @@ focus = {
         y = 1
 		completion_reward = {}
 	}
+focus = {
+   id = LUX_disband_parliament
+   mutually_exclusive = {focus = LUX_Election_of_1937}
+   x = 20
+   y = 0
+   completion_reward = {}
+   }
+
 
 # Military Branch
     focus = {
