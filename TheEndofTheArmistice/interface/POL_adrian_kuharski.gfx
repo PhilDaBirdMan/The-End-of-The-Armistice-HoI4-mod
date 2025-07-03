@@ -1,6 +1,0 @@
-spriteTypes = {
-    spriteType = {
-        name = "GFX_idea_POL_adrian_kuharski"
-        texturefile = gfx/interface/ideas/POL_adrian_kuharski.dds
-    }
-}
