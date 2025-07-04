@@ -34,7 +34,7 @@ focus_tree = {
 				search_filters = {
 					FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT
 				}
-        x = 0
+        x = -2
         y = 0
         cost = 10
         completion_reward = {
@@ -72,7 +72,7 @@ focus = {
 	search_filters = {
 			FOCUS_FILTER_INDUSTRY
 				}
-        x = 2
+        x = 0
         y = 0
         cost = 10
         completion_reward = {
@@ -88,7 +88,7 @@ focus = {
 
 	focus = {
         id = LUX_rebuild_steel
-        prerequisite = { focus = LUX_Military_Industry }
+        prerequisite = { focus = LUX_Civilian_Industry }
         icon = GFX_goal_generic_construct_civ_factory
 				relative_position_id = LUX_Civilian_Industry
         x = 0
@@ -115,8 +115,8 @@ focus = {
         icon = GFX_goal_generic_scientific_exchange
 	relative_position_id = LUX_rebuild_steel
         prerequisite = {focus = LUX_rebuild_steel}
-        prerequisite = {focus = LUX_Military_Industry}
-        x = 1
+        prerequisite = {focus = LUX_Railways}
+        x = -1
         y = 1
         cost = 5
         completion_reward = {
@@ -393,7 +393,7 @@ focus = {
 	}
 
 	focus = {
-		id = LUX_German Kingdom
+		id = LUX_German_Kingdom
 		prerequisite = { focus = LUX_expand_monarchism } 
 		mutually_exclusive = {focus = LUX_Independent_From_Influence focus = LUX_NSDAP_to_power} 
 		relative_position_id = LUX_expand_monarchism
@@ -407,7 +407,7 @@ focus = {
         id = LUX_Raise_the_Armed_Forces
         icon = GFX_goal_generic_army_doctrines
         cost = 10
-        x = 10
+        x = 25
         y = 0
         search_filters = {
             FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_SWI_MILITARY_READINESS
