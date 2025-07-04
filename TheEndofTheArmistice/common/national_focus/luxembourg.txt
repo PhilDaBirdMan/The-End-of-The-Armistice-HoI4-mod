@@ -252,7 +252,7 @@ search_filters = {
 		x = 2
 		y = 1
 		completion_reward = {
-			add_idea = LUX_socialism_idea_1
+			add_ideas = LUX_socialism_idea_1
 		}
 	}
 
