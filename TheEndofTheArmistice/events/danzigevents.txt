@@ -19,6 +19,10 @@ country_event = {
     ruling_party = democratic
     elections_allowed = yes
     election_frequency = 48
+	set_province_name = {
+		id = 362
+		name = "Gdansk"
+	}
 }
 	}
 
