@@ -37,7 +37,7 @@ LUX_socialism_idea_1 = {
 		research_speed = 0.05
 	}
 }
-LUX_socialism_idea_2 = {
+	LUX_socialism_idea_2 = {
 	picture = GFX_goal_generic_socialism
 	allowed = { original_tag = LUX }
 	modifier = {
@@ -45,10 +45,9 @@ LUX_socialism_idea_2 = {
 		weekly_political_power = 0.05
 		consumer_goods_factory_factor = -0.10
 		research_speed = 0.05
-
-
-
     }
+}
+}
 }
     
 
