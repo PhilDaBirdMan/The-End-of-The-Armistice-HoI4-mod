@@ -78,6 +78,7 @@ focus_tree = {
     target_province = 6583
 }
     }
+}
 
 focus = {
         id = LUX_Civilian_Industry
