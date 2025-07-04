@@ -259,7 +259,7 @@ search_filters = {
     focus = {
         id = LUX_welfare_state
         icon = GFX_focus_SWE_hygienic_housing
-        relative_position_id = = LUX_Socialist_Way
+        relative_position_id = LUX_Socialist_Way
         prerequisite = { focus = LUX_Socialist_Way }
         x = 0
         y = 1
