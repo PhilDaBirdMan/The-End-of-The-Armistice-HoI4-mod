@@ -264,9 +264,11 @@ search_filters = {
         x = 0
         y = 1
         cost = 10
-        swap_ideas = {
-            remove_idea = LUX_socialism_idea_1
-            add_idea = LUX_socialism_idea_2
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = LUX_socialism_idea_1
+                add_idea = LUX_socialism_idea_2
+            }
         }
     }
 
@@ -342,11 +344,11 @@ focus = {
     completion_reward = {
         add_named_threat = { threat = 5 name = LUX_ExportRevolution_threat }
         add_ideas = LUX_revolutionary_agitation
-        add_war_goal = {
+        create_wargoal = {
             type = puppet_wargoal_focus
             target = BEL
         }
-        add_war_goal = {
+        create_wargoal = {
             type = puppet_wargoal_focus
             target = HOL
         }

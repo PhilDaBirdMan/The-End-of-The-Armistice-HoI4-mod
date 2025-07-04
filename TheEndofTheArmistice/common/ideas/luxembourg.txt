@@ -2,52 +2,52 @@ ideas = {
     #national spirits
     country = {
 
-				LUX_republican_militia = {
-			    picture = GFX_generic_militia
-			    allowed = { original_tag = LUX }
-			    modifier = {
+		LUX_republican_militia = {
+			picture = GFX_generic_militia
+			allowed = { original_tag = LUX }
+			modifier = {
 		        army_experience_gain = 0.05
 		        recruitable_population_factor = 0.02
-	    }
+	    	}
+		}
+
+		LUX_revolutionary_zeal = {
+    		picture = GFX_goal_generic_revolution
+    		allowed = { original_tag = LUX }
+    		modifier = {
+        		war_support = 0.1
+        		justify_war_goal_time = -0.15
+   			}
+		}
+
+		LUX_revolutionary_agitation = {
+    		picture = GFX_goal_generic_political_agitation
+   			allowed = { original_tag = LUX }
+    		modifier = {
+       			subversive_activities_cost = -0.25
+        		ideology_drift_defense = -0.1
+    		}
+		}
+
+		LUX_socialism_idea_1 = {
+			picture = GFX_goal_generic_socialism
+			allowed = { original_tag = LUX }
+			modifier = {
+				consumer_goods_factor = -0.05
+				research_speed = 0.05
+			}
+		}
+			LUX_socialism_idea_2 = {
+			picture = GFX_goal_generic_socialism
+			allowed = { original_tag = LUX }
+			modifier = {
+				manpower_factor = 0.05
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.10
+				research_speed = 0.05
+			}
+		}
 	}
-
-			LUX_revolutionary_zeal = {
-    picture = GFX_goal_generic_revolution
-    allowed = { original_tag = LUX }
-    modifier = {
-        war_support = 0.1
-        justify_war_goal_time = -0.15
-    }
-}
-
-LUX_revolutionary_agitation = {
-    picture = GFX_goal_generic_political_agitation
-    allowed = { original_tag = LUX }
-    modifier = {
-        subversive_activities_cost = -0.25
-        ideology_drift_defense = -0.1
-    }
-}
-
-LUX_socialism_idea_1 = {
-	picture = GFX_goal_generic_socialism
-	allowed = { original_tag = LUX }
-	modifier = {
-		consumer_goods_factor = -0.05
-		research_speed = 0.05
-	}
-}
-	LUX_socialism_idea_2 = {
-	picture = GFX_goal_generic_socialism
-	allowed = { original_tag = LUX }
-	modifier = {
-		manpower_factor = 0.05
-		political_power_gain = 0.05
-		consumer_goods_factor = -0.10
-		research_speed = 0.05
-    }
-}
-}
 }
     
 
