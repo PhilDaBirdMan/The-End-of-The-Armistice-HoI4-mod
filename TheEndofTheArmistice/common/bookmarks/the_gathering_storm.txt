@@ -216,19 +216,6 @@ bookmarks = {
 			}
 			minor = yes
 			}
-		"SWI" = { 
-			history = "SWI_the_end_in_sight_desc"
-			ideology = democratic
-			ideas = {
-				SWI_neutrality
-				SWI_federalism
-			}
-			focuses = {
-				SWI_maintain_neutrality
-				SWI_reform_the_army
-			}
-			minor = yes
-			}
 		"DNZ" = {
 			history = "DNZ_the_end_in_sight_desc"
 			ideology = fascism
@@ -236,6 +223,22 @@ bookmarks = {
 			focuses = {}
 			minor = yes
 			}
+
+		"MON" = {
+			history = "MON_the_end_in_sight_desc"
+			ideology = communism
+			ideas = {
+				MON_independence
+				MON_mongolian_peoples_republic
+			}
+			focuses = {
+				MON_mongolian_peoples_republic
+				MON_mongolian_independence
+			}
+			minor = yes
+			}
+
+
 
 			effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
