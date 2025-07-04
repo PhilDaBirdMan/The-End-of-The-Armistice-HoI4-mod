@@ -71,14 +71,13 @@ focus_tree = {
         cost = 10
         completion_reward = {
             build_railway = {
-    level = 2
-    fallback = yes
-    path = { i3375 6583 }
-    start_province = 13375
-    target_province = 6583
-}
+                level = 2
+                fallback = no
+                start_province = 13375
+                target_province = 6583
+            }
+        }
     }
-}
 
 focus = {
         id = LUX_Civilian_Industry
@@ -154,7 +153,7 @@ focus = {
         }
         completion_reward = {
             add_ideas = Elections_of_1937
-            country_event = {id = LUXelection.1}
+            country_event = { id = LUXelection.1}
         }
 
     }
