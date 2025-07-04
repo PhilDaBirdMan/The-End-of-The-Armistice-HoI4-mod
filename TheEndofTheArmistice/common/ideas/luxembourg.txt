@@ -3,7 +3,7 @@ ideas = {
     country = {
 
 				LUX_republican_militia = {
-			    icon = GFX_generic_militia
+			    picture = GFX_generic_militia
 			    allowed = { original_tag = LUX }
 			    modifier = {
 		        army_experience_gain = 0.05
@@ -12,7 +12,7 @@ ideas = {
 	}
 
 			LUX_revolutionary_zeal = {
-    icon = GFX_goal_generic_revolution
+    picture = GFX_goal_generic_revolution
     allowed = { original_tag = LUX }
     modifier = {
         war_support = 0.1
@@ -21,7 +21,7 @@ ideas = {
 }
 
 LUX_revolutionary_agitation = {
-    icon = GFX_goal_generic_political_agitation
+    picture = GFX_goal_generic_political_agitation
     allowed = { original_tag = LUX }
     modifier = {
         subversive_activities_cost = -0.25
