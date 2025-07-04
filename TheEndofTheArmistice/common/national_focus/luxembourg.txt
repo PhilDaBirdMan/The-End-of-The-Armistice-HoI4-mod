@@ -192,7 +192,7 @@ search_filters = {
         prerequisite = {focus = LUX_Election_of_1937 }
         mutually_exclusive = { focus = LUX_The_Left focus = LUX_The_Center focus = LUX_no_politics }
         relative_position_id = LUX_Election_of_1937
-        x = 2
+        x = 4
         y = 1
         completion_reward = {
             add_popularity = {
@@ -232,7 +232,7 @@ search_filters = {
         prerequisite = { focus = LUX_Election_of_1937 }
         mutually_exclusive = { focus = LUX_The_Right focus = LUX_The_Left focus = LUX_The_Center }
         relative_position_id = LUX_Election_of_1937
-        x = 6
+        x = 7
         y = 1
         completion_reward = {
             set_politics = {
@@ -248,6 +248,11 @@ search_filters = {
 		cost = 10
 		relative_position_id = LUX_The_Left
         prerequisite = { focus = LUX_The_Left }
+        available = {
+            has_country_flag = LUX_agrarians_in_power
+            OR
+            has_country_flag = LUX_socialists_in_power
+        }
         mutually_exclusive = { focus = LUX_Dismantle_the_Monarchy }
 		x = 2
 		y = 1
@@ -278,6 +283,9 @@ search_filters = {
 		cost = 10
 		relative_position_id = LUX_The_Left
         prerequisite = { focus = LUX_The_Left }
+        available = {
+            has_country_flag = LUX_commies_in_power
+        }
         mutually_exclusive = { focus = LUX_Socialist_Way }
 		x = -2
 		y = 1
@@ -372,6 +380,24 @@ focus = {
         x = 0
         y = 1
 		completion_reward = {}
+	}
+
+    focus = {
+		id = LUX_liberalism
+		cost = 10
+        prerequisite = { focus = LUX_The_Center }
+        relative_position_id = LUX_The_Center
+        x = 4
+        y = 1
+	}
+
+    focus = {
+		id = LUX_centrism
+		cost = 10
+        prerequisite = { focus = LUX_The_Center }
+        relative_position_id = LUX_The_Center
+        x = 2
+        y = 1
 	}
 
 	focus = {

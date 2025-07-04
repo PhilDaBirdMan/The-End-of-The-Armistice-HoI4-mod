@@ -56,6 +56,7 @@ country_event = {
 					elections_allowed = no
 					ideology = agrarianism
 				}
+                set_country_flag = LUX_agrarians_in_power
     }
     option = {
         name = LUXelection.2.b
@@ -64,6 +65,7 @@ country_event = {
 					elections_allowed = no
 					ideology = marxism 
 				}
+                set_country_flag = LUX_commies_in_power
     }
     option = {
         name = LUXelection.2.c
@@ -78,6 +80,7 @@ country_event = {
 					election_frequency = 48
 					ideology = socialism
 				}
+                set_country_flag = LUX_socialists_in_power
     }
 }
 
