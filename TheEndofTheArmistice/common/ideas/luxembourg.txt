@@ -28,6 +28,26 @@ LUX_revolutionary_agitation = {
         ideology_drift_defense = -0.1
     }
 }
+
+LUX_socialism_idea_1 = {
+	picture = GFX_goal_generic_socialism
+	allowed = { original_tag = LUX }
+	modifier = {
+		consumer_goods_factory_factor = -0.05
+		research_speed = 0.05
+	}
+}
+LUX_socialism_idea_2 = {
+	picture = GFX_goal_generic_socialism
+	allowed = { original_tag = LUX }
+	modifier = {
+		manpower_factor = 0.05
+		weekly_political_power = 0.05
+		consumer_goods_factory_factor = -0.10
+		research_speed = 0.05
+
+
+
     }
 }
     
