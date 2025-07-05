@@ -249,9 +249,10 @@ search_filters = {
 		relative_position_id = LUX_The_Left
         prerequisite = { focus = LUX_The_Left }
         available = {
+				OR = {
             has_country_flag = LUX_agrarians_in_power
-            OR
             has_country_flag = LUX_socialists_in_power
+}
         }
         mutually_exclusive = { focus = LUX_Dismantle_the_Monarchy }
 		x = 2
