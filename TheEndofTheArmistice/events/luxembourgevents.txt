@@ -103,6 +103,7 @@ country_event = {
 					ruling_party = fascism
 					elections_allowed = no
 				}
+				set_country_flag = LUX_fascists_in_power
     }
     option = {
         name = LUXelection.3.b
@@ -115,6 +116,7 @@ country_event = {
 					ruling_party = neutrality
 					elections_allowed = no
 				}
+				set_country_flag = LUX_east_independents_in_power
     }
 
 }
@@ -139,6 +141,7 @@ country_event = {
 					elections_allowed = yes
 					election_frequency = 48
 				}
+				set_country_flag = LUX_still_in_power
     }
 
 
@@ -154,6 +157,7 @@ country_event = {
 					elections_allowed = yes
 					election_frequency = 48
 				}
+				set_country_flag = LUX_liberals_in_power
     }
 
 
@@ -169,5 +173,6 @@ country_event = {
 					elections_allowed = no
 					ideology = centrism
 				}
+				set_country_flag = LUX_center_in_power
     }
 }
