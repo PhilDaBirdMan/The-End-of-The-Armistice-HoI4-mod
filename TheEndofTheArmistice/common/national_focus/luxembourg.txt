@@ -295,7 +295,7 @@ search_filters = {
 			add_popularity = {
 				ideology = monarchism
 				popularity = -0.3
-				remove_character = LUX_
+				remove_character = LUX_charlotte
 				news_event = LUXnews.100
 			}
 		}
