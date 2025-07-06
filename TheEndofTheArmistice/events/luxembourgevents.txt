@@ -176,3 +176,18 @@ country_event = {
 				set_country_flag = LUX_center_in_power
     }
 }
+
+add_namespace = LUXnews
+
+news_event = {
+    id = LUXnews.100
+    title = LUXnews.100.t
+    desc = LUXnews.100.d
+    picture = GFX_report_event_generic_death
+
+    is_triggered_only = yes
+
+    option = {
+        name = LUXnews.100.a
+    }
+}
