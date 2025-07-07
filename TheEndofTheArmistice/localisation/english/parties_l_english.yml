@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  communism:0 "Communist"
  communism_noun:0 "Communism"
  democratic:0 "Democratic"
@@ -50,6 +50,10 @@
  centrism_desc:1 "Centrism is a form of government which wants to achieve common sense solutions that appropriately address current and future needs, that support the public trust and serve the common good with consideration of risk and capacity in context of these needs."
  anarchism:0 "Anarchism"
  anarchism_desc:0 "Anarchism is the rejection of authority itself, promoting the division of society into self-managing and self-governing collectives instead of a singular, centralized state."
+ absolute_monarchism:0 "Absolute Monarchism"
+ absolute_monarchism_desc:0 "Absolute Monarchism is a form of Monarchism where the monarch has complete power over the nation."
+ theocracy:0 "Theocracy"
+ theocracy_desc:0 "Theocracy is the acceptance of faith and religion as the leading power, with a religious figure or group as the heads of state."
  GER_fascism_party:0 "NSDAP"
  GER_fascism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei"
  GER_communism_party:0 "KPD"
@@ -391,9 +395,9 @@
  YUG_democratic_party:0 "Demokratska stranka"
  YUG_democratic_party_long:0 "Jugoslovanska demokratska stranka"
  YUG_neutrality_party:0 "Regency Council"
- YUG_neutrality_party_2:0 "Monarchists"
- YUG_kardocevik:0 "House Karađorđević"
- YUG_peters_loyalists:0 "Peter's Loyalists"
+ YUG_monarchism_2:0 "Monarchists"
+ YUG_monarchism_kardocevik:0 "House Karađorđević"
+ YUG_monarchism_peters_loyalists:0 "Peter's Loyalists"
  YUG_fascism_party:0 "JRZ"
  YUG_fascism_party_long:0 "Jugoslovanska radikalna skupnost"
  SER_communism_party:0 "League of Communists"
@@ -701,8 +705,11 @@
  SIK_communism_party_long:0 "Communist Party of the Soviet Union"
  TIB_neutrality_party:0 "Retting Rinpoche"
  YUN_neutrality_party:0 "Kuomintang"
+
  MON_communism_party:0 "MAN"
  MON_communism_party_long:0 "Mongol Ardiin Nam"
+ MON_khanism_party:0 "Borjigin Clan"
+
  TAN_communism_party:0 "CPSU"
  TAN_communism_party_long:0 "Communist Party of the Soviet Union"
  PAR_communism_party:0 "PRF"
