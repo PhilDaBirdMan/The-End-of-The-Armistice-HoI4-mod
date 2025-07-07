@@ -1,4 +1,5 @@
 ideas = {
+country = {
     MON_national_party = {
         picture = GFX_idea_generic_political_reform
         allowed = { original_tag = MON }
@@ -8,6 +9,14 @@ ideas = {
             political_power_factor = 0.1
         }
     }
+    MON_The_Khantate = {
+       picture = {}
+       allowed = {
+       original_tag = MON
+       MON = { has_completed_focus = MON_Khantate}
+       }
+}
+}
 }
 
 ideas = {
