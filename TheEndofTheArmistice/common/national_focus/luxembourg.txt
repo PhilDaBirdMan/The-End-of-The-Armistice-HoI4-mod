@@ -129,13 +129,28 @@ focus = {
 	relative_position_id = LUX_rebuild_steel
         prerequisite = {focus = LUX_rebuild_steel}
         prerequisite = {focus = LUX_Railways}
-        x = -1
+        x = 0
         y = 1
         cost = 5
         completion_reward = {
             add_research_slot = 1
         }
-    } 
+    }
+
+focus = {
+		id = LUX_ardennes_timber
+		icon = {}
+		prerequisite = { focus = LUX_Railways }
+		relative_position_id = LUX_Railways
+		cost = 10
+		available = {
+		#controls luxembourg 
+		}
+		
+		x = 0
+		y = 1
+		completion_reward = {}
+	}
 
     focus = {
         id = LUX_Election_of_1937
