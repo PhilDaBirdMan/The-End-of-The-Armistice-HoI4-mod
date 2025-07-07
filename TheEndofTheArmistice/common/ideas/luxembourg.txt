@@ -2,6 +2,16 @@ ideas = {
     #national spirits
     country = {
 
+		LUX_grand_duchess = {
+				picture = {}
+				allowed = {
+					original_tag = LUX
+					}
+				modifier = {
+					political_power_factor = 0.15
+				}
+			}
+
 		LUX_republican_militia = {
 			picture = GFX_generic_militia
 			allowed = { original_tag = LUX }
