@@ -1,13 +1,47 @@
 MON_mongol_vassals = {
-	Yuan_state = {
+	Yuan_puppet = {
 		fire_only_once = yes
+		cost = 50
+		allowed = {
+		608 = {is_owned_and_controlled_by = MON}
+		609 = {is_owned_and_controlled_by = MON}
+		610 = {is_owned_and_controlled_by = MON}
+		614 = {is_owned_and_controlled_by = MON}
+		597 = {is_owned_and_controlled_by = MON}
+		743 = {is_owned_and_controlled_by = MON}
+		615 = {is_owned_and_controlled_by = MON}
+		622 = {is_owned_and_controlled_by = MON}
+		607 = {is_owned_and_controlled_by = MON}
+		598 = {is_owned_and_controlled_by = MON}
+		606 = {is_owned_and_controlled_by = MON}
+		716 = {is_owned_and_controlled_by = MON}
+		745 = {is_owned_and_controlled_by = MON}
+		328 = {is_owned_and_controlled_by = MON}
+		717 = {is_owned_and_controlled_by = MON}
+		283 = {is_owned_and_controlled_by = MON}
+	}
 		highlight_states = {
-    highlight_state_targets = {
-        state = 123
-        state = 321
-    }
-    highlight_color_while_active = 3
-    highlight_color_before_active = 2
-}
+	    highlight_state_targets = {
+        state = 608
+        state = 609
+state = 610
+        state = 614
+state = 597
+        state = 743
+state = 615
+        state = 622
+state = 598
+        state = 607
+state = 716
+        state = 745
+state = 328
+        state = 717
+state = 283
+
+	    }
+	    highlight_color_while_active = 3
+	    highlight_color_before_active = 2
+		}
+		complete_effect = {}
 	}
 }
