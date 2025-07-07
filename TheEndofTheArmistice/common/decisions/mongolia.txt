@@ -1,0 +1,23 @@
+MON_mongol_vassals = {
+	allowed = {
+		original_tag = MON
+		}
+	visible = { 
+		is_subject = no
+	}
+	available = {
+		MON = {
+			has_completed_focus = {}
+		}
+	Yuan_state = {
+		fire_only_once = yes
+		highlight_states = {
+    highlight_state_targets = {
+        state = 123
+        state = 321
+    }
+    highlight_color_while_active = 3
+    highlight_color_before_active = 2
+}
+	}
+}
