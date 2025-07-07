@@ -1,0 +1,13 @@
+MON_mongol_vassals = {
+	allowed = {
+		original_tag = MON
+		}
+	visible = { 
+		is_subject = no
+	}
+	available = {
+		MON = {
+			has_completed_focus = {}
+		}
+}
+}
