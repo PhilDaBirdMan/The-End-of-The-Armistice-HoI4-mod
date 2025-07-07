@@ -92,6 +92,7 @@ focus_tree = {
         icon = GFX_goal_generic_political_movement
         prerequisite = { focus = MON_path_of_independence }
         relative_position_id = MON_path_of_independence
+				mutually_exclusive = {focus = MON_new_khaganate
         x = 0
         y = 1
         cost = 10
@@ -107,8 +108,9 @@ focus_tree = {
     focus = {
         id = MON_new_khaganate
         icon = GFX_goal_generic_political_pressure
-        prerequisite = { focus = MON_found_national_party }
-        relative_position_id = MON_found_national_party
+        prerequisite = { focus = MON_path_of_independence }
+        relative_position_id = MON_path_of_independence
+				mutually_exclusive = { focus = MON_found_national_party }
         x = 0
         y = 1
         cost = 12
@@ -117,7 +119,7 @@ focus_tree = {
         completion_reward = {
             add_political_power = 100
             set_rule = { can_create_factions = yes }
-            create_faction = "Neo-Khaganate Pact"
+            create_faction = "The Steppe Alliance"
         }
     }
 
@@ -221,7 +223,7 @@ focus_tree = {
             }
             declare_war_on = {
                 target = TAN
-                type = annex_everything
+                type = annex_everything_focus
             }
         }
     }
