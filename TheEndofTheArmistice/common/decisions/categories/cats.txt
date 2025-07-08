@@ -7,7 +7,7 @@ MON_mongol_vassals = {
 	}
 	available = {
 		MON = {
-			has_completed_focus = {}
+			has_completed_focus = { MON_new_khanate}
 		}
 }
 }
