@@ -44,4 +44,60 @@ state = 283
 		}
 		complete_effect = {}
 	}
+	integrate_inner_mongolia = {
+		fire_only_once = yes
+		cost = 50
+		allowed = {
+		761 = {is_owned_and_controlled_by = MON}
+		714 = {is_owned_and_controlled_by = MON}
+		612 = {is_owned_and_controlled_by = MON}
+		611 = {is_owned_and_controlled_by = MON}
+		621 = {is_owned_and_controlled_by = MON}
+		746 = {is_owned_and_controlled_by = MON}
+		616 = {is_owned_and_controlled_by = MON}
+		756 = {is_owned_and_controlled_by = MON}
+		760 = {is_owned_and_controlled_by = MON}
+		618 = {is_owned_and_controlled_by = MON}
+	}
+		highlight_states = {
+	    highlight_state_targets = {
+        state = 761
+        state = 714
+state = 612
+        state = 611
+state = 621
+        state = 746
+state = 616
+        state = 756
+state = 760
+        state = 618
+	    }
+	    highlight_color_while_active = 3
+	    highlight_color_before_active = 2
+		}
+		complete_effect = {
+ROOT = {
+add_state_core = 761
+transfer_state = 761
+add_state_core = 714
+transfer_state = 714
+add_state_core = 612
+transfer_state = 612
+add_state_core = 611
+transfer_state = 611
+add_state_core = 621
+transfer_state = 621
+add_state_core = 746
+transfer_state = 746
+add_state_core = 616
+transfer_state = 616
+add_state_core = 756
+transfer_state = 756
+add_state_core = 760
+transfer_state = 760
+add_state_core = 618
+transfer_state = 618
+}
+}
+	}
 }
