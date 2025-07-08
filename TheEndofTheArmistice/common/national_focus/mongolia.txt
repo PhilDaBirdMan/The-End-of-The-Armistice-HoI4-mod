@@ -123,6 +123,17 @@ focus_tree = {
         }
     }
 
+focus = {
+		id = MON_get_khan
+		icon = {}
+		cost = 10
+		prerequisite = {focus = MON_new_khaganate }
+		relative_position_id = MON_new_khaganate
+		x = 0
+		y = 1
+		completion_reward = {}
+	}
+
 ### ——— MILITARY BRANCH ———
 
     focus = {
