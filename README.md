@@ -17,3 +17,6 @@ In order to run the mod, you will need to do the following:
 5. In the Launcher, check to make sure that "The End of The Armistice" shows up as a mod in your library.
 
 Alternatively, you could download the latest finished version off of Paradox Mods, navigate to the launcher, and check for the mod. However, that won't have the most recent version, as it's much easier to publish versions here on GitHub than to Paradox Mods.
+
+Updates will be posted at the discord at the link below. Please report any bugs there.
+https://discord.gg/4ebBrvsSMz
