@@ -92,7 +92,7 @@ focus_tree = {
         icon = GFX_goal_generic_political_movement
         prerequisite = { focus = MON_path_of_independence }
         relative_position_id = MON_path_of_independence
-				mutually_exclusive = {focus = MON_new_khaganate
+				mutually_exclusive = {focus = MON_new_khanate
         x = 0
         y = 1
         cost = 10
@@ -106,7 +106,7 @@ focus_tree = {
     }
 
     focus = {
-        id = MON_new_khaganate
+        id = MON_new_khanate
         icon = GFX_goal_generic_political_pressure
         prerequisite = { focus = MON_path_of_independence }
         relative_position_id = MON_path_of_independence
@@ -127,8 +127,8 @@ focus = {
 		id = MON_get_khan
 		icon = {}
 		cost = 10
-		prerequisite = {focus = MON_new_khaganate }
-		relative_position_id = MON_new_khaganate
+		prerequisite = {focus = MON_new_khanate }
+		relative_position_id = MON_new_khanate
 		x = 0
 		y = 1
 		completion_reward = {}
