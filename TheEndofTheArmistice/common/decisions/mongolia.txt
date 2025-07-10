@@ -100,4 +100,49 @@ transfer_state = 618
 }
 }
 	}
+caucasus_khanate = {
+		fire_only_once = yes
+		cost = 50
+		allowed = {
+		232 = {is_owned_and_controlled_by = MON}
+		235 = {is_owned_and_controlled_by = MON}
+		234 = {is_owned_and_controlled_by = MON}
+		821 = {is_owned_and_controlled_by = MON}
+		828 = {is_owned_and_controlled_by = MON}
+		827 = {is_owned_and_controlled_by = MON}
+		233 = {is_owned_and_controlled_by = MON}
+		826 = {is_owned_and_controlled_by = MON}
+		231 = {is_owned_and_controlled_by = MON}
+		230 = {is_owned_and_controlled_by = MON}
+229 = {is_owned_and_controlled_by = MON}
+420 = {is_owned_and_controlled_by = MON}
+1000 = {is_owned_and_controlled_by = MON}
+419 = {is_owned_and_controlled_by = MON}
+800 = {is_owned_and_controlled_by = MON}
+354 = {is_owned_and_controlled_by = MON}
+	}
+		highlight_states = {
+	    highlight_state_targets = {
+        state = 232
+        state = 235
+state = 234
+        state = 821
+state = 828
+        state = 827
+state = 233
+        state = 826
+state = 231
+        state = 230
+state = 229
+        state = 420
+state = 1000
+        state = 419
+state = 800
+        state = 354
+	    }
+	    highlight_color_while_active = 3
+	    highlight_color_before_active = 2
+		}
+		complete_effect = {}
+	}
 }
