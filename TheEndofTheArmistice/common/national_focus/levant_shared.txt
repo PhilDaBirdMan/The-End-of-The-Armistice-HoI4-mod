@@ -33,6 +33,7 @@ shared_focus = {
     }
 
     ### Path 1: Cooperate with the Mandate
+shared_focus = {
     id = LEV_maintain_ties
     icon = GFX_goal_generic_improve_relations
     x = -2
@@ -46,7 +47,9 @@ shared_focus = {
         add_opinion_modifier = { target = overlord modifier = improved_relations }
     }
     focus_filter = { DIPLOMACY }
+}
 
+shared_focus = {
     id = LEV_request_autonomy
     icon = GFX_goal_generic_political_pressure
     x = -2
@@ -58,8 +61,9 @@ shared_focus = {
         add_political_power = 50
     }
     focus_filter = { POLITICAL }
-
+}
     ### Path 2: Resist Foreign Rule
+shared_focus = {
     id = LEV_underground_movements
     icon = GFX_goal_generic_dangerous_research
     x = 2
@@ -71,7 +75,9 @@ shared_focus = {
         add_war_support = 0.1
     }
     focus_filter = { RESISTANCE }
+}
 
+shared_focus = {
     id = LEV_national_aspirations
     icon = GFX_goal_generic_propaganda
     x = 2
@@ -83,8 +89,10 @@ shared_focus = {
         add_named_threat = { threat = 3 name = "LEV_aspirations_threat" }
     }
     focus_filter = { POLITICAL }
+}
 
     ### Core Path: Levantine Destiny
+shared_focus = {
     id = LEV_levantine_destiny
     icon = GFX_goal_generic_political_reform
     x = 0
@@ -98,7 +106,9 @@ shared_focus = {
         add_stability = 0.05
     }
     focus_filter = { POLITICAL }
+}
 
+shared_focus = {
     id = LEV_greater_syria
     icon = GFX_goal_generic_territory_or_war
     x = -1
@@ -114,6 +124,7 @@ shared_focus = {
         add_state_claim = 680  # Jordan
     }
     focus_filter = { EXPANSION }
+}
 
     id = LEV_arab_unity
     icon = GFX_goal_generic_allies_build_infantry
