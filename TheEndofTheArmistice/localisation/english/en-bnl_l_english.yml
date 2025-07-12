@@ -1,5 +1,5 @@
 ﻿l_english:
- BNL_
- BNL
+ BNL_Benelux_group:0 "Benelux Group"
+ BNL_Benelux_group_desc:0 "The Benelux nations, [LUX.GetName], [HOL.GetName], and [BEL.GetName] have always been close allies, and now, we can increase their international co-operation and economic integration. This will allow us to better defend ourselves against the threat of [GER.GetName]."
  BNL_delta_engineering:0 "Delta Engineering"
  BNL_delta_engineering_desc:0 "The Rhine, Meuse, and Scheldt rivers, along with their many tributaries, flow through the Benelux. The delta they form has a lot of swampland we can develop to increase the regions' industrial output."
