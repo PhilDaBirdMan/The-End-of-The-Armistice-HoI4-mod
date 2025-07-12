@@ -6,7 +6,7 @@ ideas = {
 				picture = {}
 				allowed = {
 					original_tag = LUX
-					}
+				}
 				modifier = {
 					political_power_factor = 0.15
 				}
