@@ -125,11 +125,9 @@ ideologies = {
 			send_volunteers_tension = 0.50
 			guarantee_tension = 0.25
 			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
-			collaboration_government_tension_factor = -0.5 # -50% tension from collaboration governments, this is to counter the +100% from the generic peace conference file.
 			
 			embargo_cost_factor = -0.5 # -50% cost for embargoes, this is to counter the +100% from the generic peace conference file.
 			
-			influence_cost_factor = -0.5 # -50% cost for influencing other countries, this is to counter the +100% from the generic peace conference file.
 			
 			drift_defence_factor = 0.2 # they can guillotine you or excecute you like fascists
 		}

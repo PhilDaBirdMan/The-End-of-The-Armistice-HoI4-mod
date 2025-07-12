@@ -127,7 +127,32 @@ characters = {
 	}
 
 
-	LUX_pierre_krier = {}
+	LUX_pierre_krier={
+		advisor={
+			slot = political_advisor
+			idea_token = LUX_pierre_krier
+			allowed  = {
+					original_tag  = LUX
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="Pierre Krier"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+
+		country_leader = {
+				ideology = socialism
+				traits = { socialist_economist }
+				expire = "1965.1.1.1"
+				id = -1
+			}
+	}
 
 	LUX_pierre_prum = {}
 
@@ -624,25 +649,7 @@ characters = {
 			}
 		}
 	}
-	LUX_pierre_krier={
-		advisor={
-			slot = political_advisor
-			idea_token = LUX_pierre_krier
-			allowed  = {
-					original_tag  = LUX
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Pierre Krier"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
-			}
-		}
-	}
+	
 
 	LUX_martin_karp={
 		advisor={
