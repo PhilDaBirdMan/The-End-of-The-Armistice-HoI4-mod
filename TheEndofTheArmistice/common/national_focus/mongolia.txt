@@ -92,7 +92,7 @@ focus_tree = {
         icon = GFX_goal_generic_political_movement
         prerequisite = { focus = MON_path_of_independence }
         relative_position_id = MON_path_of_independence
-				mutually_exclusive = {focus = MON_new_khanate
+				mutually_exclusive = { focus = MON_new_khanate }
         x = 0
         y = 1
         cost = 10
@@ -286,4 +286,5 @@ focus = {
             add_state_claim = 568                     
         }
     }
+}
 }
