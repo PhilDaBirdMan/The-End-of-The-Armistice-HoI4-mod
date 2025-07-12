@@ -126,6 +126,7 @@ shared_focus = {
     focus_filter = { EXPANSION }
 }
 
+shared_focus = {
     id = LEV_arab_unity
     icon = GFX_goal_generic_allies_build_infantry
     x = 0
@@ -137,7 +138,9 @@ shared_focus = {
         add_stability = 0.05
     }
     focus_filter = { DIPLOMACY }
+}
 
+    shared_focus = {
     id = LEV_local_sovereignty
     icon = GFX_goal_generic_production
     x = 1
@@ -149,8 +152,10 @@ shared_focus = {
         add_stability = 0.1
     }
     focus_filter = { POLITICAL }
-
+    }
     ### Development Branch
+
+shared_focus = {
     id = LEV_levantine_coast
     icon = GFX_goal_generic_construct_civilian
     x = -1
@@ -166,7 +171,9 @@ shared_focus = {
         }
     }
     focus_filter = { INDUSTRY }
+}
 
+shared_focus = {
     id = LEV_agriculture
     icon = GFX_goal_generic_construct_civilian
     x = 0
@@ -181,7 +188,9 @@ shared_focus = {
         }
     }
     focus_filter = { INDUSTRY }
+}
 
+shared_focus = {
     id = LEV_military_training
     icon = GFX_goal_generic_army_doctrine
     x = 1
@@ -196,8 +205,10 @@ shared_focus = {
         }
     }
     focus_filter = { ARMY }
+}
 
     ### Final Node Example
+shared_focus = {
     id = LEV_prepare_war
     icon = GFX_goal_generic_war_propaganda
     x = 0
@@ -209,6 +220,4 @@ shared_focus = {
         add_stability = -0.05
     }
     focus_filter = { WAR_SUPPORT }
-
-    } # end of shared_focus
-} # end of shared_focus_tree
+  }
