@@ -2,16 +2,7 @@ ideas = {
     #national spirits
     country = {
 
-		LUX_grand_duchess = {
-				picture = { GFX_portrait_LUX_charlotte_wilhelmine_small }
-				modifier = {
-					political_power_factor = 0.15
-				}
-				allowed = {
-					NOT = { LUX = has_government = monarchism
-				}
-				}
-			}
+		
 
 		LUX_republican_militia = {
 			picture = GFX_generic_militia
