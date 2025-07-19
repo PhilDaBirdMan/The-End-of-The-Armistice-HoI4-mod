@@ -125,7 +125,7 @@ focus_tree = {
 
 focus = {
 		id = MON_get_khan
-		icon = {}
+		icon = { }
 		cost = 10
 		prerequisite = {focus = MON_new_khanate }
 		relative_position_id = MON_new_khanate

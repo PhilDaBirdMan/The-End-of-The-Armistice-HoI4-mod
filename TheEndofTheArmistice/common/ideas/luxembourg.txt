@@ -1,96 +1,84 @@
 ideas = {
     #national spirits
     country = {
+        LUX_republican_militia = {
+            picture = GFX_generic_militia
+            modifier = {
+                army_experience_gain = 0.05
+                recruitable_population_factor = 0.02
+            }
+        }
 
-		
+        LUX_revolutionary_zeal = {
+            picture = GFX_goal_generic_revolution
+            modifier = {
+                war_support = 0.1
+                justify_war_goal_time = -0.15
+            }
+        }
 
-		LUX_republican_militia = {
-			picture = GFX_generic_militia
-			modifier = {
-		        army_experience_gain = 0.05
-		        recruitable_population_factor = 0.02
-	    	}
-		}
+        LUX_revolutionary_agitation = {
+            picture = GFX_goal_generic_political_agitation
+            modifier = {
+                subversive_activities_cost = -0.25
+                ideology_drift_defense = -0.1
+            }
+        }
 
-		LUX_revolutionary_zeal = {
-    		picture = GFX_goal_generic_revolution
-    		modifier = {
-        		war_support = 0.1
-        		justify_war_goal_time = -0.15
-   			}
-		}
+        LUX_socialism_idea_1 = {
+            picture = GFX_goal_generic_socialism
+            modifier = {
+                consumer_goods_factor = -0.05
+                research_speed = 0.05
+            }
+        }
 
-		LUX_revolutionary_agitation = {
-    		picture = GFX_goal_generic_political_agitation
-    		modifier = {
-       			subversive_activities_cost = -0.25
-        		ideology_drift_defense = -0.1
-    		}
-		}
+        LUX_socialism_idea_2 = {
+            picture = GFX_goal_generic_socialism
+            modifier = {
+                conscription_factor = 0.05
+                political_power_gain = 0.05
+                consumer_goods_factor = -0.10
+                research_speed = 0.05
+            }
+        }
+    }
 
-		LUX_socialism_idea_1 = {
-			picture = GFX_goal_generic_socialism
-			modifier = {
-				consumer_goods_factor = -0.05
-				research_speed = 0.05
-			}
-		}
-			LUX_socialism_idea_2 = {
-			picture = GFX_goal_generic_socialism
-			modifier = {
-				conscription_factor = 0.05
-				political_power_gain = 0.05
-				consumer_goods_factor = -0.10
-				research_speed = 0.05
-			}
-		}
-	}
-}
-    
-
-ideas = {
     #industrial concerns
-	industrial_concern = { 
-		LUX_arbed = {
-			picture = generic_industrial_concern_2
-			allowed = {
-				original_tag = LUX
-			}			
-			research_bonus = {
-				industry = 0.05
-			}
-			modifier = {
-				local_resources_factor = 0.15
-			}
-			ai_will_do = {
-				base = 1
-			}			
-			traits = { industrial_steel_mills_trait }
-		}
+    industrial_concern = {
+        LUX_arbed = {
+            picture = generic_industrial_concern_2
+            allowed = {
+                original_tag = LUX
+            }
+            research_bonus = {
+                industry = 0.05
+            }
+            modifier = {
+                local_resources_factor = 0.15
+            }
+            ai_will_do = {
+                base = 1
+            }
+            traits = { industrial_steel_mills_trait }
+        }
 
         LUX_GL = {
-			
-			picture = idea_generic_railroads
-
-			allowed = {
-				original_tag = LUX
-			}
-			
-			research_bonus = {
-				train_tech = 0.05
-			}
-
-			modifier = {
-				rail_way_max_level_terrain_limit = 0.15
+            picture = idea_generic_railroads
+            allowed = {
+                original_tag = LUX
+            }
+            research_bonus = {
+                train_tech = 0.05
+            }
+            modifier = {
+                rail_way_max_level_terrain_limit = 0.15
                 railway_gun_bombardment_factor = 0.33
-			}
-
-			ai_will_do = {
-				base = 1
-			}
-			
-			traits = { railway_company }
-		}
-	}
-
+            }
+            ai_will_do = {
+                base = 1
+            }
+            traits = { railway_company }
+        }
+    }
 }

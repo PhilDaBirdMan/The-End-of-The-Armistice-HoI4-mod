@@ -6,8 +6,6 @@ MON_mongol_vassals = {
 		is_subject = no
 	}
 	available = {
-		MON = {
-			has_completed_focus = { MON_new_khanate}
-		}
-}
+		has_completed_focus = MON_new_khanate 
+	}
 }
