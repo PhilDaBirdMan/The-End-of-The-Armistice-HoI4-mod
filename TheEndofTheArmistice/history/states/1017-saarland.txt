@@ -16,25 +16,17 @@ state = {
 		add_core_of = RHI
 		add_core_of = PRE
 
-		victory_points = { 
-			11435 1 # Bitburg
+
+victory_points = { 
+			11531 5 # Saarbrücken
 		}
 
-		#victory_points = { 
-		#	3423 3 # Koblenz
-		#}
-
-		victory_points = { 
-			9575 3 # Trier
-		}
-
-		
 
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 3
+			infrastructure = 3
+			industrial_complex = 2
 		}
-	
+
 		set_demilitarized_zone = yes
 		
 		1936.3.7 = {
@@ -44,32 +36,16 @@ state = {
 		1939.1.1 = {
 			buildings = {
 				radar_station = 1
-				synthetic_refinery = 3
+				synthetic_refinery = 1
 				#Westwall Forts
-				11470 = {
-					bunker = 2
-				}
-				11435 = {
-					bunker = 2
-				}
-				9575 = {
-					bunker = 2
-				}
 				11531 = {
-					bunker = 2
-				}
-				563 = {
-					bunker = 2
-				}
-				3558 = {
 					bunker = 2
 				}
 			}
 		}
-	}
-
-	provinces = {
-		563 3423 3558 9575 11435 11470 11494 11531 11547 
+		
+		provinces = {
+		11531
 	}
 	
 	local_supplies = 0.0 
