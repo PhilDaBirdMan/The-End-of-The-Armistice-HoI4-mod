@@ -45,10 +45,11 @@ victory_points = {
 			}
 		}
 		
-		provinces = {
-		11531
-	}
+		
 	
 	local_supplies = 0.0 
 }
+provinces = {
+		11531
+	}
 }
