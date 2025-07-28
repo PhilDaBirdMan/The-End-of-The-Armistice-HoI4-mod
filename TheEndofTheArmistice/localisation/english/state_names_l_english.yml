@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  STATE_1:0 "Corsica"
  STATE_2:1 "Lazio"
  STATE_3:1 "Swiss Plateau"
@@ -1211,6 +1211,7 @@
  STATE_1016:0 "Dhofar"
  STATE_1017:0 "Saarland"
  FRA_STATE_1017:0 "Sarre"
+ STATE_1018:0 "Bitburg"
 
 
 
