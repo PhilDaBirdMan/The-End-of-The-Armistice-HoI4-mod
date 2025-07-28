@@ -47,7 +47,6 @@ victory_points = {
 		
 		
 	
-	local_supplies = 0.0 
 }
 provinces = {
 		11531
